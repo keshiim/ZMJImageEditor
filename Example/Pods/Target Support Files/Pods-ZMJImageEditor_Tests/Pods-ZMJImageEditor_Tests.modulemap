@@ -1,0 +1,6 @@
+framework module Pods_ZMJImageEditor_Tests {
+  umbrella header "Pods-ZMJImageEditor_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

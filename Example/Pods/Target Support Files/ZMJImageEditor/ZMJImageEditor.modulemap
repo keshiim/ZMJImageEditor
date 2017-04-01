@@ -1,0 +1,6 @@
+framework module ZMJImageEditor {
+  umbrella header "ZMJImageEditor-umbrella.h"
+
+  export *
+  module * { export * }
+}

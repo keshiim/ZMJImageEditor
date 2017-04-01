@@ -40,7 +40,7 @@
 		27DE14A43CA3CFB572079268 /* Pods_ZMJImageEditor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMJImageEditor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A2E827517B641A65CA729C3 /* Pods-ZMJImageEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMJImageEditor_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMJImageEditor_Example/Pods-ZMJImageEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		34987136E676891CB6349AD8 /* Pods-ZMJImageEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMJImageEditor_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMJImageEditor_Tests/Pods-ZMJImageEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		394312151282C043C6CA836D /* ZMJImageEditor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZMJImageEditor.podspec; path = ../ZMJImageEditor.podspec; sourceTree = "<group>"; };
+		394312151282C043C6CA836D /* ZMJImageEditor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZMJImageEditor.podspec; path = ../ZMJImageEditor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* ZMJImageEditor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMJImageEditor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -62,10 +62,10 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		61B4020DC01A3C1A893ADD31 /* Pods-ZMJImageEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMJImageEditor_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMJImageEditor_Tests/Pods-ZMJImageEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8160F7BC79F30F2E4C7F8903 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8160F7BC79F30F2E4C7F8903 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BD4383784075711AC3458819 /* Pods_ZMJImageEditor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZMJImageEditor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C43CCE604ABC815A6FCB6D1A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C43CCE604ABC815A6FCB6D1A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F8B003FCF35DA1C073F3898D /* Pods-ZMJImageEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMJImageEditor_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMJImageEditor_Example/Pods-ZMJImageEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +251,7 @@
 				ORGANIZATIONNAME = keshiim;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
+						LastSwiftMigration = 0830;
 						TestTargetID = 6003F589195388D20070C39A;
 					};
 				};
@@ -568,6 +569,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMJImageEditor_Example.app/ZMJImageEditor_Example";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -588,6 +590,7 @@
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZMJImageEditor_Example.app/ZMJImageEditor_Example";
 				WRAPPER_EXTENSION = xctest;
 			};

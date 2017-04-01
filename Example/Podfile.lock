@@ -1,0 +1,28 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
+  - ZMJImageEditor (0.1.0):
+    - YYCategories (~> 1.0.4)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - ZMJImageEditor (from `../`)
+
+EXTERNAL SOURCES:
+  ZMJImageEditor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
+  ZMJImageEditor: 313f885dc553bc9b4fd33a017d10065ce6cc789e
+
+PODFILE CHECKSUM: d388e0c6c5a7b09b15daf5a70b3babd0c10d1159
+
+COCOAPODS: 1.2.0
