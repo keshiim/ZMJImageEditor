@@ -1,7 +1,7 @@
 {
   "name": "ZMJImageEditor",
   "version": "0.1.0",
-  "summary": "A short description of ZMJImageEditor.",
+  "summary": "ZMJImageEditor 是一个仿微信图片编辑的组件",
   "homepage": "https://github.com/keshiim/ZMJImageEditor",
   "license": {
     "type": "MIT",
@@ -23,7 +23,6 @@
     "ZMJImageEditor/Assets/*.{xib,storyboard}",
     "ZMJImageEditor/Assets/*.{pdf,xcassets}"
   ],
-  "public_header_files": "Pod/Classes/**/*.h",
   "frameworks": [
     "UIKit",
     "MapKit"

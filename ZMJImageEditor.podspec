@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'ZMJImageEditor'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of ZMJImageEditor.'
+  s.summary          = 'ZMJImageEditor 是一个仿微信图片编辑的组件'
   s.homepage         = 'https://github.com/keshiim/ZMJImageEditor'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -26,7 +26,6 @@ Pod::Spec.new do |s|
      'ZMJImageEditor/Assets/*.{pdf,xcassets}'
      ]
 
-   s.public_header_files = 'Pod/Classes/**/*.h'
    s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'YYCategories', '~> 1.0.4'
 end

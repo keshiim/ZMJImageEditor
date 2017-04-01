@@ -11,166 +11,166 @@
 		00414E77348EC5F8F7356851C0B4E49E /* ZMJImageEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3255B08D740D0CEB1C8B3F92B427E411 /* ZMJImageEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		043CEB7EEB443C3734E2B4943AC84137 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D89E566FC198D071CB4B7D4CA269C44 /* QuartzCore.framework */; };
 		04C11D5A4EDF6DB529E697F3A02E396C /* WBGImageEditorGestureManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 034AD362C725D3DF68CB5A87F00A68B8 /* WBGImageEditorGestureManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05079D0E6C9DB5BAF23DB3A5CE8C56E9 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 7A4DE3818A1426705DEAD220DE412A92 /* TOCropViewControllerLocalizable.strings */; };
 		051A816D6DD0CAE13496DDCFE0829167 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C83D81080DF881B816C81AF58CFD768 /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		05B6BCBEECF16D2DB792423D7919568E /* NSData+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 44903915D8DAC71EA5ACEE05068B2AC8 /* NSData+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		06B305D673D0417BF69FF88D4795794C /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 436172A60B33F9E23D89DCBBB6708EDE /* TOCropViewControllerLocalizable.strings */; };
 		084886DF29843FEEE6B19133B332131C /* YYCGUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = CA37EB8C11B2C54CD273230D63F650DC /* YYCGUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2D6F24C2F43ED17447FCCEA5160DA /* UIApplication+StrictKeyWindow.m */; };
+		09B80593EFEB0B05F1CEC880ABDE36F0 /* WBGDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AFF58E7AEA2A8424EC6F5D8879F6B /* WBGDrawTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0B8DBAB184BB7E8E1D9C5E3386A8DEDB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299729DF692564631E1C3642FA946B0F /* Foundation.framework */; };
 		0B94413CF8B124A6A8797187522B5890 /* UIImage+CropRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = E57C675938028421AFBE782B15BBAE7B /* UIImage+CropRotate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0D9F5CDB423E20E07E99814EE60B03B0 /* Pods-ZMJImageEditor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BB798A10B8A6E2B5E72FA909E41EF336 /* Pods-ZMJImageEditor_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E9A1DFA978313E361202DE756D2A73C /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5035F04F8A77FB72887B8D7A6B12D /* NSObject+YYAdd.m */; };
+		0F010F9E63893ED99C4837B932AA6CE6 /* WBGTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098F695A54FAD4DEDD3EA932CCF8626 /* WBGTextTool.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0F0133B4853CBB8EF7B0CA635ABE5BD1 /* YYCategories-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 750402ACB205FC74F09D25C8FC1684AA /* YYCategories-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0F39BD7EDE122A19185A44FCCEEB2BED /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A2EDDE8878B48069E1C9DEC45083B6 /* UIImage+CropRotate.m */; };
 		0FA90407FF90DE64149BFB11875BDFAA /* NSArray+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = AF137C163488CCB6089B37454B4C2C6B /* NSArray+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10FC4B168DC671D714C5E89F2DED47C5 /* NSObject+YYAddForKVO.h in Headers */ = {isa = PBXBuildFile; fileRef = DC29AAC97ED460671CB1FD7A8435309E /* NSObject+YYAddForKVO.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		12B1A8D85CDA91CA15FB49733CE2EC0B /* UITableView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 96532F0C4E41AB9047C47AEE35E652BE /* UITableView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		142F776A12EB6759A5C41B4E145C4E94 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = A8DBB837224F3E3530CDD4E964F2802B /* TOCropViewControllerLocalizable.strings */; };
 		14604FB1A28B5959831531BDEB27C223 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299729DF692564631E1C3642FA946B0F /* Foundation.framework */; };
-		1635CDBA59F94AC82E1A9F88F4EDF44B /* WBGImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C9E4FEC52C32631DAF3811EB4BD298 /* WBGImageEditor.m */; };
-		1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2853684A5857E1F158EDBCB988A4A /* SwiftSupport.swift */; };
-		1EBA263B6EB24C37CA60893D4D8447C0 /* WBGImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BBBF25DAAD40EA414458A8B6EE71A1 /* WBGImageToolBase.m */; };
-		20AFB2114E68B18EEA102C3699055400 /* UIBarButtonItem+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BA133B9AB4BE97AA9685021C6897230B /* UIBarButtonItem+YYAdd.m */; };
+		15E3203E5AC6821336CCF80C704027F6 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510F8A1B58EC2951E7BBD219736B666 /* TOCropOverlayView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		19D97DCA59C97556A005271AA2BC0D07 /* WBGImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5706041BCFD8134D92E15CB93E9595D8 /* WBGImageEditorViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1B9CD9B6D735874DB6B698EBA615EA6B /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = AF67AB188A47C9FF4925EC4D783B6616 /* UIImage+Compare.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1C5788FEFB00995AF4DD399B370CC5D7 /* WBGTextToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC5A0E789C331074FB077A946354D /* WBGTextToolView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		21A42FB326FC61F1E43C009EAA15B437 /* TOCropOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 671D6A9DEDD965B81F95E19CF197D011 /* TOCropOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		22A9767B8B664EBE5116E69D38F1700D /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = BD064021365316797F250F3A85902221 /* TOCropViewControllerLocalizable.strings */; };
+		222DEBF5ED8FA68A8308D5D36E237B33 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 21D7B867BF9B0359DA21EFF4BC11FC5D /* TOCropViewControllerLocalizable.strings */; };
 		23E17883ADDC0CB2CD984D058E9006A9 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10242738A7B3CBA3A98DA988C638EC32 /* CoreImage.framework */; };
-		26D9595BAAFA3E32B3CC33E0ACB36558 /* UITextField+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB91484B66B70439D5A808917EC65C /* UITextField+YYAdd.m */; };
+		259EC549080E052414CCBFF2EC678542 /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 70157C3FD42868660996446951C628F5 /* NSString+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		26639DD43B4B414BF763B73F3AC3D348 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F7EC695BE89B7EEFFAEC6F541B515 /* TOCropViewControllerLocalizable.strings */; };
 		28298EAFBB4596B71E907C9C0285FB9B /* WBGImageToolBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 22496710197D400ED1A7040AC17202BD /* WBGImageToolBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2AAD62D4436363FDC509CB511D242109 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 3ED90652BEDC8DC392274954546B97B2 /* TOCropViewControllerLocalizable.strings */; };
+		2AA758D109A51ECF340BB64AC2E40E21 /* ColorfullButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F18AF29841C2E7DFE6AE985C755E14 /* ColorfullButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		2B3C43F85F5BEE34136D371C26D5DE2F /* UIImage+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DA6D746B6797792DF2A059133ED045D /* UIImage+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F07615A634DB89B3CD74CB4CAB7AAE7 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 08014883B51A889D2DDF70C68E548708 /* TOCropViewControllerLocalizable.strings */; };
-		2F4075CDDB32BA20EA773170B5B5837A /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5BC4256A3F108048A5818223AC9F8 /* NSNotificationCenter+YYAdd.m */; };
 		2F485B69F51E4F723A38410F31F08550 /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 981C7F1D5EA9CC5091DEC75D4EEECB43 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		304AE5B1595AF6A11056F1D9D961E2D3 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 32D281492266BE6C2CFE798471381787 /* TOCropViewControllerLocalizable.strings */; };
 		314A0A39BBFE7C299BC8CC2EA833045A /* UIScreen+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = FFB0BCF98EFC1C0DB858ADFB66580B9F /* UIScreen+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31CBB68051C7BD1CCC6AF1F92A9E86C8 /* YYCategories.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1086537F61DA310F085CAE73859DED5 /* YYCategories.framework */; };
+		31D90DFFF06B5035A7D4B41CFAD676DD /* WBGImageEditorGestureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8CC3F1A3078A21C02E217920BC7DF /* WBGImageEditorGestureManager.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		31D9F54E055328C5464C4AE2334B272B /* UIApplication+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = D00DAA887012D3ED766F26D09C382590 /* UIApplication+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		31E353F389CC04681D63D727C52C580D /* Pods-ZMJImageEditor_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BBB6F58D3FA7CD6B3EA4C0F8ECD40EB3 /* Pods-ZMJImageEditor_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		356EED70D8712D55470770BFD686AFE0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BBADAA5EE27CF624263BAEB66965EB /* UIKit.framework */; };
-		35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92C51F85438B18444149D71DD3D2D1 /* UIImage+Diff.m */; };
 		36237F3261DAA74C4358A088ECC3CA00 /* NSKeyedUnarchiver+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA82B3CD334EFC9AEE6ACBA1DF348C7 /* NSKeyedUnarchiver+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36FD78250FEB6E26AA8CC1F1A5C6D32A /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC4C026DFA7701696D1D6AFB8C01A /* NSTimer+YYAdd.m */; };
-		3761186EE70E054F091BB4A43A7A3925 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 304C2382C6508B6AE90B67C7FC2A2C3E /* UIDevice+YYAdd.m */; };
-		37C5FEA0F1115C715E542095A9160D0B /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F81F6BB7DE2257977D5DF2405F4FE /* TOActivityCroppedImageProvider.m */; };
+		3773E43122C8F22B5ACA73615F810021 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 08014883B51A889D2DDF70C68E548708 /* TOCropViewControllerLocalizable.strings */; };
+		3A1F7A335A69786004AE915CB8940D02 /* WBGImageToolBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 27BBBF25DAAD40EA414458A8B6EE71A1 /* WBGImageToolBase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		3B4800C305DD5A6EAADFCD293AC37C7A /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD80F55B5B714815090FF62BA262CFDF /* MapKit.framework */; };
 		3B83A2F08BC090A6FD3EBA869E1BD39D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D89E566FC198D071CB4B7D4CA269C44 /* QuartzCore.framework */; };
 		3B8660FA3AC7FAEC4DA5E33ADE83FF37 /* WBGTextToolView.h in Headers */ = {isa = PBXBuildFile; fileRef = 67DC3D80117DE77D0B002358619806F3 /* WBGTextToolView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3C98EEA64D2515ACF36BDB4E56148961 /* WBGImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5706041BCFD8134D92E15CB93E9595D8 /* WBGImageEditorViewController.m */; };
 		3CF177E1B79A8E3B36DAB9D9B8045651 /* WBGDrawTool.h in Headers */ = {isa = PBXBuildFile; fileRef = CC023368B1BD1C9179A3AE63C08828AE /* WBGDrawTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4094944DB5080FB94E97B9D2EB2B2458 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 7A4DE3818A1426705DEAD220DE412A92 /* TOCropViewControllerLocalizable.strings */; };
 		4162BB609915BBDBEA887923B759BAD6 /* NSDictionary+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C674C5CAB38C1716B0D9C521B578CF1 /* NSDictionary+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C9994B1DF0B3F2EBA0DE57A0927F33 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4477B8267CBA9F7B96AACAA175F4097B /* TOCroppedImageAttributes.h in Headers */ = {isa = PBXBuildFile; fileRef = 2816E793B19BD29D58FEFD69DD05EC17 /* TOCroppedImageAttributes.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45FDA3733EBCDD3CA6FCD2113D6AE859 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 9D7F7EC695BE89B7EEFFAEC6F541B515 /* TOCropViewControllerLocalizable.strings */; };
+		449296A64C2CEB1986558532280D4087 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9E0FB46FB34AAEBCD83C6131C6A0 /* TOCropViewControllerLocalizable.strings */; };
+		4589C13B07A70001D6AE0E7938B89113 /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D844AEC35CB76055CE79BDA4A23791E /* TOCropViewControllerTransitioning.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		471C366B434E699F1E0A075497D81E2F /* NSDate+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E210CC118C09BE04AC9E31E32A4717 /* NSDate+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		47538F05DFBE10E8CA03D070E3445F88 /* TOCropViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FD6C687C56B2C832FEC82B132E7B281 /* TOCropViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		48735559F15E39714061B6A0BE189393 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A9172B1964464F5C1597718D41D5DA93 /* NSBundle+YYAdd.m */; };
-		4D95162686E26C4B14C98DCFD37DF3F4 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = D7997157143D22A5500609DA6856A9A0 /* TOCropViewControllerLocalizable.strings */; };
+		4781E2D605E450B5FBDF7A2368A9EFFE /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FD05BFF4B87ACE2F2EE93A1BFA64174B /* UITableView+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4A37D0FEF32EFB4264472B47B648CABF /* UITextField+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFB91484B66B70439D5A808917EC65C /* UITextField+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4B7E2D21A23DB9496B690EEA69CAF8C3 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918E820C3AC4F9FF4CB49A21CD94B53 /* UIColor+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		4E2601A3C4FD2457E7511F75C153A25A /* NSThread+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = A45FD0E345A0061B14CFE709AA520216 /* NSThread+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 242214F275D2F393C965BC257D42E819 /* FBSnapshotTestCase-dummy.m */; };
+		4E438907E07E4606A969F8E73AA19416 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EE12AF4C2090FA8BB86B0EDF3E58799E /* UIControl+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		4F91A3D57F61A09C74F4E982F00C1C7A /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = C4CB5514D726CDE29D0D58FDEBAE543C /* TOCropViewControllerLocalizable.strings */; };
 		50DBC1ABA4DC6C363BD4BF05B988B398 /* NSObject+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 82CDBE333A63AE86C42E59BE85C79B3C /* NSObject+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		524FE18B6FDE43D95E5E4B195F88EF29 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5104311BE30CF538461884CE2EC29 /* TOCropView.m */; };
-		52837FBD223A79E6F6F9254B2ED705E7 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB213FAB552535CDB573FF3C9E3145 /* TOCroppedImageAttributes.m */; };
-		529E75D07C55EFD800171A961C5DF57E /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 04E1062F7AF97CD4C2C5826648F6ACB5 /* TOCropViewControllerLocalizable.strings */; };
 		53587FFF0122C557E0F625879C408859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299729DF692564631E1C3642FA946B0F /* Foundation.framework */; };
 		545FE7FADF6FCAE86B4556AD8A2326DC /* Pods-ZMJImageEditor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8203B203969F6EE6C7DED8BE72E041 /* Pods-ZMJImageEditor_Example-dummy.m */; };
-		554807AE66D79122FA0576B4ED9DFD3F /* WBGTextTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2098F695A54FAD4DEDD3EA932CCF8626 /* WBGTextTool.m */; };
-		5E1DDBF5E8E8F816A7CA618E7AFD20D0 /* UITableView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FD05BFF4B87ACE2F2EE93A1BFA64174B /* UITableView+YYAdd.m */; };
-		60E1AA7CE97EE834DB2916B151FD0A42 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 1EE90C057E4B06D0FBD1E28DDA623B7D /* TOCropViewControllerLocalizable.strings */; };
+		580115402C0D0458F16CD36589B8A2AA /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32487BFB52CA152FE911E4BC30802E /* UIImage+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5A6447B2D121B9F6AA4DE91696521CF2 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 009F6304E67E0EBFE7DE9B2451B7AE4B /* TOCropViewControllerLocalizable.strings */; };
+		5AFC726891876972DE0D81A7CA4FFBC9 /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = E41263A807BC3429328F2F36CD51370E /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5DF43795E0C69E73EEF901BA1E2FF827 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586B2155533C8168D2FF78E00E3E02B /* NSData+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		5E3A6BAC89D0A9EE2D8B786DBE0F5EE0 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = D8381CB1A50BCF1C83FC2359637C8AF5 /* TOCropViewControllerLocalizable.strings */; };
+		5F65495211297994220A8D081EAEFE15 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44C2853684A5857E1F158EDBCB988A4A /* SwiftSupport.swift */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		60479200DF4423A10AC83FBC458491F8 /* ZMJImageEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEE165C045ACF06EF11C42EA5CE6EF /* ZMJImageEditor-dummy.m */; };
+		61061CA5458F4CA508B840BDEFCA9B1F /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = D7997157143D22A5500609DA6856A9A0 /* TOCropViewControllerLocalizable.strings */; };
+		61100C0E6FB329EE38659B3E5A1B7090 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF2D6F24C2F43ED17447FCCEA5160DA /* UIApplication+StrictKeyWindow.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6138AFA9CAD66475B3822695429077EB /* CALayer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1444207491A97F5BA0A4DD9DEED1BF7B /* CALayer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BBADAA5EE27CF624263BAEB66965EB /* UIKit.framework */; };
-		64D6E68930EE950D648D7ACEC96459A2 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = A8DBB837224F3E3530CDD4E964F2802B /* TOCropViewControllerLocalizable.strings */; };
-		65B3F9A6F4594FBEFE4C894F541E5AD5 /* UIControl+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = EE12AF4C2090FA8BB86B0EDF3E58799E /* UIControl+YYAdd.m */; };
-		69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = AF67AB188A47C9FF4925EC4D783B6616 /* UIImage+Compare.m */; };
-		6BB4BBA3CC2C8358E09C447E3E636799 /* UIScreen+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405B7EE6B63D5A285D5192DB8D726C9 /* UIScreen+YYAdd.m */; };
+		64CBF177AFF368BC3B8A95AD5410EDE6 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 394DFC64E4704CE10F2605843B5F8DEE /* NSDictionary+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6AE035FD79DC051576CCE0AE591903F3 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D9BADF02BB36339CE66203DD2B3851 /* UIApplication+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6C794B8CF8351B84CAD05ED8BBBBA267 /* UIBezierPath+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D90F04944F5C068AB8D32CD8CA66A77 /* UIBezierPath+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E5F1702C2ECB30A4A7508BF7171C3E5 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BAA44FDD56A4A128A8409165E74B5 /* TOCropViewControllerLocalizable.strings */; };
+		6DE9C98091E9A36595B732523965F732 /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CA29339DDE9DADE928AFBBBB7F61EDB1 /* UIScrollView+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6E35614FA042808C837E7C5716E9A156 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C240B77BBB35AFD22B512A2581F2E8E1 /* TOCropViewController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6F22C9A18621486D7257691A6AA8A661 /* TOCropViewControllerTransitioning.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F948A7FDA20347B7A887205CE2640C4 /* TOCropViewControllerTransitioning.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7124DD803FD3E7A106ED8E454A02562C /* UIFont+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D030E8E860FDF6916774BBD8A23CFF /* UIFont+YYAdd.m */; };
-		72452F83E0101E6598F42A7319381E8F /* TOCropViewControllerTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D844AEC35CB76055CE79BDA4A23791E /* TOCropViewControllerTransitioning.m */; };
+		6FAB5298272C4B4E26438CF8C9F14BA4 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 087376A00F8F924AC8D7F33173209A1F /* UIImage+Snapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7408D9BD00535B58DA91AF916EE58641 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A92C51F85438B18444149D71DD3D2D1 /* UIImage+Diff.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		746E0632642681B3FE38E364A81D2212 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD0BC606A5693AFA320DB845C1C91B70 /* CoreFoundation.framework */; };
-		74E894EE0DF9F475D9415F1DD7018F91 /* NSData+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 8586B2155533C8168D2FF78E00E3E02B /* NSData+YYAdd.m */; };
-		756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 087376A00F8F924AC8D7F33173209A1F /* UIImage+Snapshot.m */; };
+		75EACFA9F3469050D6C88C8E232CE2CD /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E946893FBC3D15D0F2959626A9F69E8E /* NSArray+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		769CF259F9D7097CC2F4F93797E5920B /* YYCategoriesMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 951B15930802382587C9E8690AB335C7 /* YYCategoriesMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7A7C4CD0AEF9DFBEAFDA634D578AA6BC /* WBGTextToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A0FC5A0E789C331074FB077A946354D /* WBGTextToolView.m */; };
-		817A64DFD71532AB1958D0D2EA156941 /* TOCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8510F8A1B58EC2951E7BBD219736B666 /* TOCropOverlayView.m */; };
-		8B5E6A6843CA4DAD8BB941980EA35D79 /* WBGImageEditorGestureManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 90A8CC3F1A3078A21C02E217920BC7DF /* WBGImageEditorGestureManager.m */; };
-		8BB91BD7AF1EE532A85CAFA50FA1F1C6 /* UIApplication+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = C7D9BADF02BB36339CE66203DD2B3851 /* UIApplication+YYAdd.m */; };
+		7921B3738A11E221EF85D5B4D653E57D /* NSNotificationCenter+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 81E5BC4256A3F108048A5818223AC9F8 /* NSNotificationCenter+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		793FDE1EF81D682D7A3A9EB75FDF3E52 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEC27EFCB0DFC2C287DC0E793B12319 /* NSNumber+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7AE033E817BF9F75A35CE0D17E864A1B /* UIBarButtonItem+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BA133B9AB4BE97AA9685021C6897230B /* UIBarButtonItem+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7CAB6B47976801955E3FD5F2FB0BF6A5 /* TOCroppedImageAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = ADFB213FAB552535CDB573FF3C9E3145 /* TOCroppedImageAttributes.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F97C4BCF71877056A7829143E78F33B /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EAC4703102D5F2C88AA59430F7B888 /* FBSnapshotTestCasePlatform.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		7F9E1281E8104BE9F16E6A95A1F460A9 /* YYCategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67BE7DBDB39A2A5ADDF0E4FE2BD1232 /* YYCategories-dummy.m */; };
+		83517F9C1FA8DEAFE631FD81A0B5F5E7 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 436172A60B33F9E23D89DCBBB6708EDE /* TOCropViewControllerLocalizable.strings */; };
+		8598E3E03258075C8A3CF5537133DE2A /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 8478CA92CC67AAAC83F4688A825E4F8C /* TOCropViewControllerLocalizable.strings */; };
+		870E5E95144967021B509E7D6FBBEABA /* NSKeyedUnarchiver+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE058BE3E1C22E39CF7CFC510C7F32E /* NSKeyedUnarchiver+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		87DA5B54754998022EC2067695543A87 /* TOCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8B5104311BE30CF538461884CE2EC29 /* TOCropView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		89F6CA862FAC7E9D47ED58AC17D11191 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E3745A1481C5F0B195ACB8B046FA1115 /* YYCGUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8A53E5A64A2CBDDB073009EB885E7772 /* NSObject+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D5035F04F8A77FB72887B8D7A6B12D /* NSObject+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8DCA7696E65A588D2F181651C8F0A81C /* NSNotificationCenter+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 45AD2A541B37098A85422FDC0A18C2B2 /* NSNotificationCenter+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E80540A624078CE0830BDD1FAD07AFC /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = E946893FBC3D15D0F2959626A9F69E8E /* NSArray+YYAdd.m */; };
+		8EA5B9693ED4F8A97A73CDE8BE439073 /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCACB45C9479961F28219FFAC082F7B /* NSObject+YYAddForKVO.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9275179E6E28CF297F838BD5FDC7D544 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6523EC66D3E25A16E4F4C6664B81DDEE /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92C657ED9A88D65F81BC13DF3BE66F4E /* NSString+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDF5912BA73A09C991972F4E23B5559 /* NSString+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92DEF73315F8C8DBE0298B93564AD8E4 /* UIControl+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EBA3EC8EE212CAE1B75C2478DD56613 /* UIControl+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		92DF5F00A1E50F1244DD6F0B95F6A457 /* NSObject+YYAddForARC.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F49D55B4DEDD34A8293F5581F003A35 /* NSObject+YYAddForARC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		934F676ED1BA1F77CA322E10AD5F420C /* NSTimer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0E27F2E851786122BB77DB09FBC7A2 /* NSTimer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		94F0FEB17AB45A6D52A01D2D9AC7C66F /* WBGDrawTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 295AFF58E7AEA2A8424EC6F5D8879F6B /* WBGDrawTool.m */; };
-		952FABE17880109A99133EE71C93D806 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = C4CB5514D726CDE29D0D58FDEBAE543C /* TOCropViewControllerLocalizable.strings */; };
+		9421A09FAC5015A5C36FB1FE754259D0 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A4AE287E38DD89C3A4A6B4D7083F7 /* NSDate+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		94C835AFB17C88B8F7CE6EC62C15CAAD /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 687B18A79352C3570DDAB16209ABF0C7 /* TOCropScrollView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 60ED73F4200C5EED7748B9FA0372A44E /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		982E5357DEC4D73594DB5E8729EE0E0A /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A631C745C31C264AD13368E182F1BAA1 /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		98C07084F1A8F7630B3E820713B4750D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299729DF692564631E1C3642FA946B0F /* Foundation.framework */; };
-		9DDA521D9D055BE717B2A392F3FF10C8 /* UIImage+library.m in Sources */ = {isa = PBXBuildFile; fileRef = 708697C6691A8703CB6A0A62FCB1D428 /* UIImage+library.m */; };
-		A0AD46D43A1F00FBC10E27C95FF54C61 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = D8381CB1A50BCF1C83FC2359637C8AF5 /* TOCropViewControllerLocalizable.strings */; };
-		A12678F529F67419BFC7422BAE5C5A07 /* NSObject+YYAddForARC.m in Sources */ = {isa = PBXBuildFile; fileRef = E41263A807BC3429328F2F36CD51370E /* NSObject+YYAddForARC.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9C7F33870436305419672A7551E2420A /* UIGestureRecognizer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1CC63F97824DECBA0125421C245C74 /* UIGestureRecognizer+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9C851EEF0ED20D7ECA568E0AAFA45A49 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C44B8EC725492E5750080849AC9FD89 /* UIView+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9D5EEFE2B3645DF6E1B0D8F48392BA9D /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 04E1062F7AF97CD4C2C5826648F6ACB5 /* TOCropViewControllerLocalizable.strings */; };
 		A13DC97B9226C631E48FE391B0D9EE51 /* UIView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B675A6E83F3169664C624EDDD1FA3342 /* UIView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1B78B75E1CF223DC5538836D06D2BAD /* UIGestureRecognizer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1CC63F97824DECBA0125421C245C74 /* UIGestureRecognizer+YYAdd.m */; };
-		A36E174AC6E646F4887AAA2C16146C19 /* ZMJImageEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4FEE165C045ACF06EF11C42EA5CE6EF /* ZMJImageEditor-dummy.m */; };
 		A4ADD1A79CEF7622687F14E9A7B8AC44 /* WBGImageEditorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C26D3FC232F829012D9A00BB0D5434D /* WBGImageEditorViewController.xib */; };
-		A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873C16E1980A00DB9CC99A82B7E880B9 /* FBSnapshotTestController.m */; };
 		A7125EF83BEA186CCA42A075914ADF08 /* UIGestureRecognizer+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 29E5C2605079A83CAD64DD92785A0D68 /* UIGestureRecognizer+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A7D8D2717E5BEA0CBDA459439EABBE82 /* UIScrollView+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D2BE4AEEF84ADAAAA66EA4304E18F03 /* UIScrollView+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A996F425E1D17FE2CFB695DCF95E195C /* UIBarButtonItem+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E66FB4BFBA36E69AC540CEE317EE8E /* UIBarButtonItem+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9EC16EAE2027437D3F61F38073E8C19 /* UIView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C44B8EC725492E5750080849AC9FD89 /* UIView+YYAdd.m */; };
 		AB9004A6537959E4A8CFCF4D447EDA81 /* UIImage+library.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A2CB0DC34165730BD3665602432F5F5 /* UIImage+library.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD743ABD0F32C1F91E7A779018534131 /* UIColor+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C40E2C44155F9DC2EF4F8B1823E6869 /* UIColor+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AF1BAFC1549ED9D8F980D06656674604 /* ColorfullButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AC7FE51824A6B8718FBFB480971BE38 /* ColorfullButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B14BAEB5C0A866ED97DEF68BA1BA9C5A /* WBGImageEditorViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7306CCF9A72F8F06CFFCE4CB5B24A80F /* WBGImageEditorViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B55BCB0BF03C3FD865C1515E1707A7B2 /* TOCropScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 687B18A79352C3570DDAB16209ABF0C7 /* TOCropScrollView.m */; };
-		B5EBCE734D79AC7C9CA9BC16DDE76B73 /* UIColor+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 9918E820C3AC4F9FF4CB49A21CD94B53 /* UIColor+YYAdd.m */; };
 		B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0DDA1E75B8E658F0D8E427888380BBE7 /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BA67EB6AE59993F738E4D66B262B9B1C /* NSNumber+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = CE2E6877E00733AA0BF587628854AA60 /* NSNumber+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BC952FC04FC963C1294DCD619C9B6B3B /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BD128E4EE7AC4D62BA6BDE52E9E4478 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BDBF51CA3F237D4186C0EB090688F279 /* TOActivityCroppedImageProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 207DDB94EADF51A62E81604D0C2E45BA /* TOActivityCroppedImageProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8945233DE74B58ADD80ADCC92120ACA /* FBSnapshotTestCase.m */; };
+		BED658CEA78B877105E58C4ACB503C78 /* NSTimer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1DC4C026DFA7701696D1D6AFB8C01A /* NSTimer+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BF3C7E3F12E827AF953A250D058CD41B /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 1EE90C057E4B06D0FBD1E28DDA623B7D /* TOCropViewControllerLocalizable.strings */; };
 		BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1E2559FFF5EDE4CFBCAF332D16325C /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C243031FACBBC06229C2CCC9F462200A /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9E0FB46FB34AAEBCD83C6131C6A0 /* TOCropViewControllerLocalizable.strings */; };
 		C2683BB0EE71A20170AB85F79A7725EA /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 421DD0B9B2A0336BCC90D5277CEF1680 /* Accelerate.framework */; };
-		C2A63F6F8238DC095A2FD465E1F8DF55 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 21D7B867BF9B0359DA21EFF4BC11FC5D /* TOCropViewControllerLocalizable.strings */; };
 		C37BA9C731CDF86C19935B03AC281ECA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C08A5390275E5B90A85C0BCCE3B00B8 /* CoreText.framework */; };
 		C3A10A7472645AAEFC585957FB0B0110 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 299729DF692564631E1C3642FA946B0F /* Foundation.framework */; };
-		C4B3118DA2F5FE21DA41E200EFB7EAA4 /* NSDate+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 261A4AE287E38DD89C3A4A6B4D7083F7 /* NSDate+YYAdd.m */; };
+		C425FC12A9977E8BF1535EDC4F2B70DC /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F4BC1BD6DEEA9D283FBB11168A0EAF /* CALayer+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C4B577DDDE33BC604AEBDA2E81A2757C /* UIDevice+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = B4350080452143E302DEE0E0FD9C9996 /* UIDevice+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C66F23F2EB5E1EAD6D4FADA61E3B94E0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AB9E92236D4EB046C30E0E3CFB6A9C5 /* CoreGraphics.framework */; };
-		C7593A45C430CDF7DFB1D936E2C0E659 /* NSString+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 70157C3FD42868660996446951C628F5 /* NSString+YYAdd.m */; };
+		C839151532403F611055A527E8EAD8B5 /* UIBezierPath+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D0E47910171F7B9B938C472D42661 /* UIBezierPath+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C8A1B164F39B6EC49246B60B2D6D65CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3BBADAA5EE27CF624263BAEB66965EB /* UIKit.framework */; };
 		CA07075DCD9B1ADC127948B1B21E5946 /* WBGImageEditor.h in Headers */ = {isa = PBXBuildFile; fileRef = 6415DBBADD8D132BD505D672BBAA9D4D /* WBGImageEditor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CAFA5E486BCE117A7D8C0FBF9DA6666B /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = DF449254BDA2502E0518DDBAB96CE8FC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		CF7A72F1B776EB333CBFD10226356316 /* UIImage+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = BF32487BFB52CA152FE911E4BC30802E /* UIImage+YYAdd.m */; };
-		D0C267FC71CEBBA820534CF5B51AB609 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = E3745A1481C5F0B195ACB8B046FA1115 /* YYCGUtilities.m */; };
-		D11BCDDE48AF6760B8B2E8878E668D99 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 635C51A500018217CC26182FBFC722CD /* TOCropToolbar.m */; };
-		D2A17755D7563D903A5BCD8857CFCE48 /* TOCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C240B77BBB35AFD22B512A2581F2E8E1 /* TOCropViewController.m */; };
+		CD31FD3A8BD14EBBE203884DBD6B446D /* WBGImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C9E4FEC52C32631DAF3811EB4BD298 /* WBGImageEditor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CECF3881C75CEEF48D03E4AB0A579B12 /* UIImage+CropRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41A2EDDE8878B48069E1C9DEC45083B6 /* UIImage+CropRotate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CEDC0C223FA92B09B6CE7EB70E03FE36 /* UIFont+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 89D030E8E860FDF6916774BBD8A23CFF /* UIFont+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D097F3914F8E2EA14FB7C88FA3099F26 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8945233DE74B58ADD80ADCC92120ACA /* FBSnapshotTestCase.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D32332CA40D4F631E8DBA950B25A18FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7844476DF20EC680166084FF24B858A3 /* XCTest.framework */; };
-		D3D7A792C449659984E12C0D1271A36C /* CALayer+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 61F4BC1BD6DEEA9D283FBB11168A0EAF /* CALayer+YYAdd.m */; };
 		D46335A2AA4FCC3F33D9148ADFEA3A84 /* TOCropToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7C43C900EDE8658498E3676EDE549E /* TOCropToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D61C66E9874815C8F5A52D016EF97AE8 /* YYCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 4355274981E5D7F088298BBB232C7E38 /* YYCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D82A6BB5AAA6489A2B2364588F71EF3E /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 009F6304E67E0EBFE7DE9B2451B7AE4B /* TOCropViewControllerLocalizable.strings */; };
-		D9BFD0C12C9A80B1FF27C39256569303 /* NSDictionary+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 394DFC64E4704CE10F2605843B5F8DEE /* NSDictionary+YYAdd.m */; };
-		DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EAC4703102D5F2C88AA59430F7B888 /* FBSnapshotTestCasePlatform.m */; };
-		DBBAF2520CD5C07CC1FE85E8460D4D25 /* ColorfullButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B3F18AF29841C2E7DFE6AE985C755E14 /* ColorfullButton.m */; };
+		D6530F05C57846A84881D54188D6359B /* UIImage+library.m in Sources */ = {isa = PBXBuildFile; fileRef = 708697C6691A8703CB6A0A62FCB1D428 /* UIImage+library.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D7C47F803EACB2BD4FE4EF72B8C97E6C /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 29C57634849D85F36DD51176BA7951B9 /* TOCropViewControllerLocalizable.strings */; };
+		DB7106F71FEB312F8533CDF1DA5CB7F4 /* UIScreen+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0405B7EE6B63D5A285D5192DB8D726C9 /* UIScreen+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		DEE731F59B72A1D8B4F9AB9FAF165213 /* UIFont+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = 204E989DB9C4892BB2F2C4256CC8D391 /* UIFont+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFEC57A998EF9027F5767FDDE133FB73 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 0A8BAA44FDD56A4A128A8409165E74B5 /* TOCropViewControllerLocalizable.strings */; };
 		E04EE76159C6152D0BAD0368A9EC2FE8 /* NSBundle+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = CAE5DB702FBFAC55D16B845AA2FA46C0 /* NSBundle+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E101A9460E8395F2BDC07BEDDC500479 /* NSKeyedUnarchiver+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AE058BE3E1C22E39CF7CFC510C7F32E /* NSKeyedUnarchiver+YYAdd.m */; };
-		E15BE379FE29CE51DE3A247C70FD0A90 /* UIBezierPath+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 847D0E47910171F7B9B938C472D42661 /* UIBezierPath+YYAdd.m */; };
-		E2B3BF231188984B4D90109BF01EC859 /* UIScrollView+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CA29339DDE9DADE928AFBBBB7F61EDB1 /* UIScrollView+YYAdd.m */; };
+		E13141B1F6B9296F4679692F8FE31482 /* TOCropToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 635C51A500018217CC26182FBFC722CD /* TOCropToolbar.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		E492D4A45BB0189545496C5BD98067ED /* TOCropViewController-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 16C1FA9847C82D6A9C8C5FC4F3CDD05F /* TOCropViewController-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5D87154622B834AC0B7E48B3207DB89 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F302FA3681B831CF39E07295B0EF4D6 /* ImageIO.framework */; };
 		E67A6480D4B4159BB2EB0A9D9D623A8D /* WBGTextTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 108B3A688A197EC8DC874AD37AB436BD /* WBGTextTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E6F134A38107FF229AD03D1E7F0FCA09 /* NSNumber+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = CAEC27EFCB0DFC2C287DC0E793B12319 /* NSNumber+YYAdd.m */; };
 		E83F25A5CD0D6FA7CAFDF567F9DC34FA /* UITextField+YYAdd.h in Headers */ = {isa = PBXBuildFile; fileRef = C47869D8E0AED3E582E9B6D5FE10DA8F /* UITextField+YYAdd.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9D5EF482949E65F0E84B0810721CFBF /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 873C16E1980A00DB9CC99A82B7E880B9 /* FBSnapshotTestController.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EAE9A5AEA548430242EC44F2344ED0A0 /* EditImage.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFBB101E9E1394D937EC8CC85F25CAA /* EditImage.xcassets */; };
 		EDC4DB0F79B9F10F8BD8FF343EFB103E /* Pods-ZMJImageEditor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2698C9AF3F86E2995C2A8A7662753AB /* Pods-ZMJImageEditor_Tests-dummy.m */; };
-		F178B309EC5F737322410AAB7888A643 /* YYCategories-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C67BE7DBDB39A2A5ADDF0E4FE2BD1232 /* YYCategories-dummy.m */; };
-		F61CA5A5379673E64B6C4B144EEE2AC0 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 29C57634849D85F36DD51176BA7951B9 /* TOCropViewControllerLocalizable.strings */; };
-		FBD143B84B474D7E1D3EEE44A3D6DC92 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 8478CA92CC67AAAC83F4688A825E4F8C /* TOCropViewControllerLocalizable.strings */; };
-		FC5F16C5ED8DA69E67A8D349413A6688 /* NSThread+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A631C745C31C264AD13368E182F1BAA1 /* NSThread+YYAdd.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		FD8BC308DE25FA2B21A707B6F9851FAE /* NSObject+YYAddForKVO.m in Sources */ = {isa = PBXBuildFile; fileRef = ACCACB45C9479961F28219FFAC082F7B /* NSObject+YYAddForKVO.m */; };
+		F33986F4969B4F178AF9EB568FE8B1AA /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 242214F275D2F393C965BC257D42E819 /* FBSnapshotTestCase-dummy.m */; };
+		F370CF37815545EAA334CEF4BF0981D3 /* TOActivityCroppedImageProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = A21F81F6BB7DE2257977D5DF2405F4FE /* TOActivityCroppedImageProvider.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F6A6F6B13F6E477867A97937C4055A21 /* NSBundle+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = A9172B1964464F5C1597718D41D5DA93 /* NSBundle+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F839F996FF286B107D0D4D7AC0740463 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 3ED90652BEDC8DC392274954546B97B2 /* TOCropViewControllerLocalizable.strings */; };
+		FB64FBAA633292C4FACD5EAE181EB2E2 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = BD064021365316797F250F3A85902221 /* TOCropViewControllerLocalizable.strings */; };
+		FE24902EB6ED9D084E905D30A0656147 /* TOCropViewControllerLocalizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 32D281492266BE6C2CFE798471381787 /* TOCropViewControllerLocalizable.strings */; };
+		FF9B84ED409A4352DF885EE8C51A5AB5 /* UIDevice+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = 304C2382C6508B6AE90B67C7FC2A2C3E /* UIDevice+YYAdd.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -958,7 +958,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A7B590B83E6345486FA1D9666588F9A6 /* Build configuration list for PBXNativeTarget "YYCategories" */;
 			buildPhases = (
-				765A965BAEE0AF808FF565BF19A9F329 /* Sources */,
+				2C0BCF4AEDAA9A76B08F65EAFBC4D1BF /* Sources */,
 				6E35A4779607A916BA21421D82CABE42 /* Frameworks */,
 				006B3332D92B36D223E7284C1B964FA4 /* Headers */,
 			);
@@ -975,7 +975,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F28097D43AF5CD8DA838ABD52A053790 /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
 			buildPhases = (
-				E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */,
+				AD173CC510A850B6289189A20CD107AE /* Sources */,
 				1D421A30A1BDB7E1C4216F64D0C939B1 /* Frameworks */,
 				9DC6F5AC11E37A1EB45C6473C9E800B6 /* Headers */,
 			);
@@ -1029,7 +1029,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7DD7DCC4AF4715013CE2640240178893 /* Build configuration list for PBXNativeTarget "ZMJImageEditor" */;
 			buildPhases = (
-				FC47FC3605E9867871833E1A6C594A1D /* Sources */,
+				08CF635C2481E33433F1BE3D88407D3F /* Sources */,
 				3612DD254E984F98285821B00C26EABB /* Frameworks */,
 				3A9BCD71A74F25484D325977256F682F /* Headers */,
 				4F81D1CE01543EE17AC2D5083C039D7E /* Resources */,
@@ -1095,41 +1095,86 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		765A965BAEE0AF808FF565BF19A9F329 /* Sources */ = {
+		08CF635C2481E33433F1BE3D88407D3F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D7A792C449659984E12C0D1271A36C /* CALayer+YYAdd.m in Sources */,
-				8E80540A624078CE0830BDD1FAD07AFC /* NSArray+YYAdd.m in Sources */,
-				48735559F15E39714061B6A0BE189393 /* NSBundle+YYAdd.m in Sources */,
-				74E894EE0DF9F475D9415F1DD7018F91 /* NSData+YYAdd.m in Sources */,
-				C4B3118DA2F5FE21DA41E200EFB7EAA4 /* NSDate+YYAdd.m in Sources */,
-				D9BFD0C12C9A80B1FF27C39256569303 /* NSDictionary+YYAdd.m in Sources */,
-				E101A9460E8395F2BDC07BEDDC500479 /* NSKeyedUnarchiver+YYAdd.m in Sources */,
-				2F4075CDDB32BA20EA773170B5B5837A /* NSNotificationCenter+YYAdd.m in Sources */,
-				E6F134A38107FF229AD03D1E7F0FCA09 /* NSNumber+YYAdd.m in Sources */,
-				0E9A1DFA978313E361202DE756D2A73C /* NSObject+YYAdd.m in Sources */,
-				A12678F529F67419BFC7422BAE5C5A07 /* NSObject+YYAddForARC.m in Sources */,
-				FD8BC308DE25FA2B21A707B6F9851FAE /* NSObject+YYAddForKVO.m in Sources */,
-				C7593A45C430CDF7DFB1D936E2C0E659 /* NSString+YYAdd.m in Sources */,
-				FC5F16C5ED8DA69E67A8D349413A6688 /* NSThread+YYAdd.m in Sources */,
-				36FD78250FEB6E26AA8CC1F1A5C6D32A /* NSTimer+YYAdd.m in Sources */,
-				8BB91BD7AF1EE532A85CAFA50FA1F1C6 /* UIApplication+YYAdd.m in Sources */,
-				20AFB2114E68B18EEA102C3699055400 /* UIBarButtonItem+YYAdd.m in Sources */,
-				E15BE379FE29CE51DE3A247C70FD0A90 /* UIBezierPath+YYAdd.m in Sources */,
-				B5EBCE734D79AC7C9CA9BC16DDE76B73 /* UIColor+YYAdd.m in Sources */,
-				65B3F9A6F4594FBEFE4C894F541E5AD5 /* UIControl+YYAdd.m in Sources */,
-				3761186EE70E054F091BB4A43A7A3925 /* UIDevice+YYAdd.m in Sources */,
-				7124DD803FD3E7A106ED8E454A02562C /* UIFont+YYAdd.m in Sources */,
-				A1B78B75E1CF223DC5538836D06D2BAD /* UIGestureRecognizer+YYAdd.m in Sources */,
-				CF7A72F1B776EB333CBFD10226356316 /* UIImage+YYAdd.m in Sources */,
-				6BB4BBA3CC2C8358E09C447E3E636799 /* UIScreen+YYAdd.m in Sources */,
-				E2B3BF231188984B4D90109BF01EC859 /* UIScrollView+YYAdd.m in Sources */,
-				5E1DDBF5E8E8F816A7CA618E7AFD20D0 /* UITableView+YYAdd.m in Sources */,
-				26D9595BAAFA3E32B3CC33E0ACB36558 /* UITextField+YYAdd.m in Sources */,
-				A9EC16EAE2027437D3F61F38073E8C19 /* UIView+YYAdd.m in Sources */,
-				F178B309EC5F737322410AAB7888A643 /* YYCategories-dummy.m in Sources */,
-				D0C267FC71CEBBA820534CF5B51AB609 /* YYCGUtilities.m in Sources */,
+				2AA758D109A51ECF340BB64AC2E40E21 /* ColorfullButton.m in Sources */,
+				F370CF37815545EAA334CEF4BF0981D3 /* TOActivityCroppedImageProvider.m in Sources */,
+				15E3203E5AC6821336CCF80C704027F6 /* TOCropOverlayView.m in Sources */,
+				7CAB6B47976801955E3FD5F2FB0BF6A5 /* TOCroppedImageAttributes.m in Sources */,
+				94C835AFB17C88B8F7CE6EC62C15CAAD /* TOCropScrollView.m in Sources */,
+				E13141B1F6B9296F4679692F8FE31482 /* TOCropToolbar.m in Sources */,
+				87DA5B54754998022EC2067695543A87 /* TOCropView.m in Sources */,
+				6E35614FA042808C837E7C5716E9A156 /* TOCropViewController.m in Sources */,
+				3773E43122C8F22B5ACA73615F810021 /* TOCropViewControllerLocalizable.strings in Sources */,
+				05079D0E6C9DB5BAF23DB3A5CE8C56E9 /* TOCropViewControllerLocalizable.strings in Sources */,
+				4F91A3D57F61A09C74F4E982F00C1C7A /* TOCropViewControllerLocalizable.strings in Sources */,
+				D7C47F803EACB2BD4FE4EF72B8C97E6C /* TOCropViewControllerLocalizable.strings in Sources */,
+				8598E3E03258075C8A3CF5537133DE2A /* TOCropViewControllerLocalizable.strings in Sources */,
+				5A6447B2D121B9F6AA4DE91696521CF2 /* TOCropViewControllerLocalizable.strings in Sources */,
+				9D5EEFE2B3645DF6E1B0D8F48392BA9D /* TOCropViewControllerLocalizable.strings in Sources */,
+				FE24902EB6ED9D084E905D30A0656147 /* TOCropViewControllerLocalizable.strings in Sources */,
+				F839F996FF286B107D0D4D7AC0740463 /* TOCropViewControllerLocalizable.strings in Sources */,
+				26639DD43B4B414BF763B73F3AC3D348 /* TOCropViewControllerLocalizable.strings in Sources */,
+				61061CA5458F4CA508B840BDEFCA9B1F /* TOCropViewControllerLocalizable.strings in Sources */,
+				222DEBF5ED8FA68A8308D5D36E237B33 /* TOCropViewControllerLocalizable.strings in Sources */,
+				DFEC57A998EF9027F5767FDDE133FB73 /* TOCropViewControllerLocalizable.strings in Sources */,
+				BF3C7E3F12E827AF953A250D058CD41B /* TOCropViewControllerLocalizable.strings in Sources */,
+				83517F9C1FA8DEAFE631FD81A0B5F5E7 /* TOCropViewControllerLocalizable.strings in Sources */,
+				FB64FBAA633292C4FACD5EAE181EB2E2 /* TOCropViewControllerLocalizable.strings in Sources */,
+				142F776A12EB6759A5C41B4E145C4E94 /* TOCropViewControllerLocalizable.strings in Sources */,
+				449296A64C2CEB1986558532280D4087 /* TOCropViewControllerLocalizable.strings in Sources */,
+				5E3A6BAC89D0A9EE2D8B786DBE0F5EE0 /* TOCropViewControllerLocalizable.strings in Sources */,
+				4589C13B07A70001D6AE0E7938B89113 /* TOCropViewControllerTransitioning.m in Sources */,
+				CECF3881C75CEEF48D03E4AB0A579B12 /* UIImage+CropRotate.m in Sources */,
+				D6530F05C57846A84881D54188D6359B /* UIImage+library.m in Sources */,
+				09B80593EFEB0B05F1CEC880ABDE36F0 /* WBGDrawTool.m in Sources */,
+				CD31FD3A8BD14EBBE203884DBD6B446D /* WBGImageEditor.m in Sources */,
+				31D90DFFF06B5035A7D4B41CFAD676DD /* WBGImageEditorGestureManager.m in Sources */,
+				19D97DCA59C97556A005271AA2BC0D07 /* WBGImageEditorViewController.m in Sources */,
+				3A1F7A335A69786004AE915CB8940D02 /* WBGImageToolBase.m in Sources */,
+				0F010F9E63893ED99C4837B932AA6CE6 /* WBGTextTool.m in Sources */,
+				1C5788FEFB00995AF4DD399B370CC5D7 /* WBGTextToolView.m in Sources */,
+				60479200DF4423A10AC83FBC458491F8 /* ZMJImageEditor-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C0BCF4AEDAA9A76B08F65EAFBC4D1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C425FC12A9977E8BF1535EDC4F2B70DC /* CALayer+YYAdd.m in Sources */,
+				75EACFA9F3469050D6C88C8E232CE2CD /* NSArray+YYAdd.m in Sources */,
+				F6A6F6B13F6E477867A97937C4055A21 /* NSBundle+YYAdd.m in Sources */,
+				5DF43795E0C69E73EEF901BA1E2FF827 /* NSData+YYAdd.m in Sources */,
+				9421A09FAC5015A5C36FB1FE754259D0 /* NSDate+YYAdd.m in Sources */,
+				64CBF177AFF368BC3B8A95AD5410EDE6 /* NSDictionary+YYAdd.m in Sources */,
+				870E5E95144967021B509E7D6FBBEABA /* NSKeyedUnarchiver+YYAdd.m in Sources */,
+				7921B3738A11E221EF85D5B4D653E57D /* NSNotificationCenter+YYAdd.m in Sources */,
+				793FDE1EF81D682D7A3A9EB75FDF3E52 /* NSNumber+YYAdd.m in Sources */,
+				8A53E5A64A2CBDDB073009EB885E7772 /* NSObject+YYAdd.m in Sources */,
+				5AFC726891876972DE0D81A7CA4FFBC9 /* NSObject+YYAddForARC.m in Sources */,
+				8EA5B9693ED4F8A97A73CDE8BE439073 /* NSObject+YYAddForKVO.m in Sources */,
+				259EC549080E052414CCBFF2EC678542 /* NSString+YYAdd.m in Sources */,
+				982E5357DEC4D73594DB5E8729EE0E0A /* NSThread+YYAdd.m in Sources */,
+				BED658CEA78B877105E58C4ACB503C78 /* NSTimer+YYAdd.m in Sources */,
+				6AE035FD79DC051576CCE0AE591903F3 /* UIApplication+YYAdd.m in Sources */,
+				7AE033E817BF9F75A35CE0D17E864A1B /* UIBarButtonItem+YYAdd.m in Sources */,
+				C839151532403F611055A527E8EAD8B5 /* UIBezierPath+YYAdd.m in Sources */,
+				4B7E2D21A23DB9496B690EEA69CAF8C3 /* UIColor+YYAdd.m in Sources */,
+				4E438907E07E4606A969F8E73AA19416 /* UIControl+YYAdd.m in Sources */,
+				FF9B84ED409A4352DF885EE8C51A5AB5 /* UIDevice+YYAdd.m in Sources */,
+				CEDC0C223FA92B09B6CE7EB70E03FE36 /* UIFont+YYAdd.m in Sources */,
+				9C7F33870436305419672A7551E2420A /* UIGestureRecognizer+YYAdd.m in Sources */,
+				580115402C0D0458F16CD36589B8A2AA /* UIImage+YYAdd.m in Sources */,
+				DB7106F71FEB312F8533CDF1DA5CB7F4 /* UIScreen+YYAdd.m in Sources */,
+				6DE9C98091E9A36595B732523965F732 /* UIScrollView+YYAdd.m in Sources */,
+				4781E2D605E450B5FBDF7A2368A9EFFE /* UITableView+YYAdd.m in Sources */,
+				4A37D0FEF32EFB4264472B47B648CABF /* UITextField+YYAdd.m in Sources */,
+				9C851EEF0ED20D7ECA568E0AAFA45A49 /* UIView+YYAdd.m in Sources */,
+				7F9E1281E8104BE9F16E6A95A1F460A9 /* YYCategories-dummy.m in Sources */,
+				89F6CA862FAC7E9D47ED58AC17D11191 /* YYCGUtilities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1141,64 +1186,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2E80CCD063D04B57A1A5E140726E8A4 /* Sources */ = {
+		AD173CC510A850B6289189A20CD107AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */,
-				BE14F2198CDB0DAD98A567981D21C7A1 /* FBSnapshotTestCase.m in Sources */,
-				DB7A106243AC974FC7EBEB00B506C786 /* FBSnapshotTestCasePlatform.m in Sources */,
-				A4F69F3477A935285620AC3031C5C848 /* FBSnapshotTestController.m in Sources */,
-				1AB7934C16CE49DE196FFC7BE7278287 /* SwiftSupport.swift in Sources */,
-				094973D2D2F1E3B2E772F93C8147C6B9 /* UIApplication+StrictKeyWindow.m in Sources */,
-				69DA8B003216466C60F029CBD79897F1 /* UIImage+Compare.m in Sources */,
-				35DD05FD595A6FE7F5A0692D12E319DC /* UIImage+Diff.m in Sources */,
-				756564ABAF2892FE7140C92A1CDDCF65 /* UIImage+Snapshot.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC47FC3605E9867871833E1A6C594A1D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DBBAF2520CD5C07CC1FE85E8460D4D25 /* ColorfullButton.m in Sources */,
-				37C5FEA0F1115C715E542095A9160D0B /* TOActivityCroppedImageProvider.m in Sources */,
-				817A64DFD71532AB1958D0D2EA156941 /* TOCropOverlayView.m in Sources */,
-				52837FBD223A79E6F6F9254B2ED705E7 /* TOCroppedImageAttributes.m in Sources */,
-				B55BCB0BF03C3FD865C1515E1707A7B2 /* TOCropScrollView.m in Sources */,
-				D11BCDDE48AF6760B8B2E8878E668D99 /* TOCropToolbar.m in Sources */,
-				524FE18B6FDE43D95E5E4B195F88EF29 /* TOCropView.m in Sources */,
-				D2A17755D7563D903A5BCD8857CFCE48 /* TOCropViewController.m in Sources */,
-				2F07615A634DB89B3CD74CB4CAB7AAE7 /* TOCropViewControllerLocalizable.strings in Sources */,
-				4094944DB5080FB94E97B9D2EB2B2458 /* TOCropViewControllerLocalizable.strings in Sources */,
-				952FABE17880109A99133EE71C93D806 /* TOCropViewControllerLocalizable.strings in Sources */,
-				F61CA5A5379673E64B6C4B144EEE2AC0 /* TOCropViewControllerLocalizable.strings in Sources */,
-				FBD143B84B474D7E1D3EEE44A3D6DC92 /* TOCropViewControllerLocalizable.strings in Sources */,
-				D82A6BB5AAA6489A2B2364588F71EF3E /* TOCropViewControllerLocalizable.strings in Sources */,
-				529E75D07C55EFD800171A961C5DF57E /* TOCropViewControllerLocalizable.strings in Sources */,
-				304AE5B1595AF6A11056F1D9D961E2D3 /* TOCropViewControllerLocalizable.strings in Sources */,
-				2AAD62D4436363FDC509CB511D242109 /* TOCropViewControllerLocalizable.strings in Sources */,
-				45FDA3733EBCDD3CA6FCD2113D6AE859 /* TOCropViewControllerLocalizable.strings in Sources */,
-				4D95162686E26C4B14C98DCFD37DF3F4 /* TOCropViewControllerLocalizable.strings in Sources */,
-				C2A63F6F8238DC095A2FD465E1F8DF55 /* TOCropViewControllerLocalizable.strings in Sources */,
-				6E5F1702C2ECB30A4A7508BF7171C3E5 /* TOCropViewControllerLocalizable.strings in Sources */,
-				60E1AA7CE97EE834DB2916B151FD0A42 /* TOCropViewControllerLocalizable.strings in Sources */,
-				06B305D673D0417BF69FF88D4795794C /* TOCropViewControllerLocalizable.strings in Sources */,
-				22A9767B8B664EBE5116E69D38F1700D /* TOCropViewControllerLocalizable.strings in Sources */,
-				64D6E68930EE950D648D7ACEC96459A2 /* TOCropViewControllerLocalizable.strings in Sources */,
-				C243031FACBBC06229C2CCC9F462200A /* TOCropViewControllerLocalizable.strings in Sources */,
-				A0AD46D43A1F00FBC10E27C95FF54C61 /* TOCropViewControllerLocalizable.strings in Sources */,
-				72452F83E0101E6598F42A7319381E8F /* TOCropViewControllerTransitioning.m in Sources */,
-				0F39BD7EDE122A19185A44FCCEEB2BED /* UIImage+CropRotate.m in Sources */,
-				9DDA521D9D055BE717B2A392F3FF10C8 /* UIImage+library.m in Sources */,
-				94F0FEB17AB45A6D52A01D2D9AC7C66F /* WBGDrawTool.m in Sources */,
-				1635CDBA59F94AC82E1A9F88F4EDF44B /* WBGImageEditor.m in Sources */,
-				8B5E6A6843CA4DAD8BB941980EA35D79 /* WBGImageEditorGestureManager.m in Sources */,
-				3C98EEA64D2515ACF36BDB4E56148961 /* WBGImageEditorViewController.m in Sources */,
-				1EBA263B6EB24C37CA60893D4D8447C0 /* WBGImageToolBase.m in Sources */,
-				554807AE66D79122FA0576B4ED9DFD3F /* WBGTextTool.m in Sources */,
-				7A7C4CD0AEF9DFBEAFDA634D578AA6BC /* WBGTextToolView.m in Sources */,
-				A36E174AC6E646F4887AAA2C16146C19 /* ZMJImageEditor-dummy.m in Sources */,
+				F33986F4969B4F178AF9EB568FE8B1AA /* FBSnapshotTestCase-dummy.m in Sources */,
+				D097F3914F8E2EA14FB7C88FA3099F26 /* FBSnapshotTestCase.m in Sources */,
+				7F97C4BCF71877056A7829143E78F33B /* FBSnapshotTestCasePlatform.m in Sources */,
+				E9D5EF482949E65F0E84B0810721CFBF /* FBSnapshotTestController.m in Sources */,
+				5F65495211297994220A8D081EAEFE15 /* SwiftSupport.swift in Sources */,
+				61100C0E6FB329EE38659B3E5A1B7090 /* UIApplication+StrictKeyWindow.m in Sources */,
+				1B9CD9B6D735874DB6B698EBA615EA6B /* UIImage+Compare.m in Sources */,
+				7408D9BD00535B58DA91AF916EE58641 /* UIImage+Diff.m in Sources */,
+				6FAB5298272C4B4E26438CF8C9F14BA4 /* UIImage+Snapshot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
