@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/ZMJImageEditor.svg?style=flat)](http://cocoapods.org/pods/ZMJImageEditor)
 [![Platform](https://img.shields.io/cocoapods/p/ZMJImageEditor.svg?style=flat)](http://cocoapods.org/pods/ZMJImageEditor)
 
+## 功能介绍
+剪裁、涂鸦、文字。各种旋转各种好完，如果有bug，欢迎issue
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
