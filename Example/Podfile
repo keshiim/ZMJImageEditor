@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZMJImageEditor_Example' do
+  pod 'ZMJImageEditor', :path => '../'
+
+  target 'ZMJImageEditor_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
