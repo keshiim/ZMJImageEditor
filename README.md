@@ -6,11 +6,21 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZMJImageEditor.svg?style=flat)](http://cocoapods.org/pods/ZMJImageEditor)
 
 ## 功能介绍
-剪裁、涂鸦、文字。各种旋转各种好完，如果有bug，欢迎issue
-![](https://github.com/keshiim/ZMJImageEditor/blob/master/1.png)
+剪裁、涂鸦、文字。各种旋转各种好完，如果有bug，欢迎issue，下面是几个介绍功能的GIF
 
-![](https://github.com/keshiim/ZMJImageEditor/blob/master/2.png)
+1. draw功能
 
+![draw](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/draw.gif)
+
+
+2. text
+
+![text](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/text.gif)
+![text2](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/text2.gif)
+
+3. clip，rotation
+
+![clip,rotation](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/clip.gif)
 ## Usage
 
 调起
