@@ -10,17 +10,17 @@
 
 1. draw功能
 
-![draw](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/draw.gif)
+![draw](https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/draw.gif)
 
 
 2. text
 
-![text](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/text.gif)
-![text2](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/text2.gif)
+![text](https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text.gif)
+![text2](https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text2.gif)
 
 3. clip，rotation
 
-![clip,rotation](https://github.com/keshiim/ZMJImageEditor/blob/master/screenShot/clip.gif)
+![clip,rotation](https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/clip.gif)
 ## Usage
 
 调起
