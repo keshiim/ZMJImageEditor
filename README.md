@@ -47,6 +47,8 @@ self.imageView.image = image;
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+and this is the [demo](https://github.com/keshiim/ZMJImageEditorDemo) project
+
 ## Requirements
 
 iOS7+
