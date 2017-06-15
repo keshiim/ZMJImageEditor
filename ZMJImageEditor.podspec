@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZMJImageEditor'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'ZMJImageEditor 是一个和微信一样图片编辑的组件，功能强大，极易集成'
   s.homepage         = 'https://github.com/keshiim/ZMJImageEditor'
   # s.screenshots     = 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/draw.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text2.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/clip.gif'

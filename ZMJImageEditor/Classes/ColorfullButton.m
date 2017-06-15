@@ -30,7 +30,7 @@ IB_DESIGNABLE
 
 - (void)drawCirle {
     for (CALayer *layer in self.layer.sublayers) {
-        [layer removeFromSuperlayer];
+        if (!layer.hidden) [layer removeFromSuperlayer];
     }
     
     UIGraphicsBeginImageContext(self.bounds.size);
