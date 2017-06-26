@@ -140,6 +140,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 }
 
 - (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
     
     if (!self.drawingView) {
         self.drawingView = [[UIImageView alloc] initWithFrame:self.imageView.superview.frame];
@@ -263,6 +264,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     
     [self resetImageViewFrame];
     [self resetZoomScaleWithAnimated:NO];
+    [self viewDidLayoutSubviews];
 }
 
 - (void)resetImageViewFrame {
