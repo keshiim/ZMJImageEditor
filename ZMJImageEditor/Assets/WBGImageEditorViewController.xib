@@ -121,7 +121,7 @@
                                 <constraint firstAttribute="width" constant="32" id="xnQ-FJ-ivW"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                            <state key="normal" title="img"/>
+                            <state key="normal" image="paper"/>
                             <connections>
                                 <action selector="paperAction:" destination="-1" eventType="touchUpInside" id="uSp-LB-Pto"/>
                             </connections>
@@ -216,11 +216,11 @@
             <rect key="frame" x="0.0" y="0.0" width="58" height="231"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-gA-Bjr" userLabel="background">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="taZ-gA-Bjr" userLabel="background">
                     <rect key="frame" x="16" y="12" width="26" height="207"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-QN-XqK" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-QN-XqK" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="29" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -235,7 +235,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="x8i-QE-wxO"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeF-yt-Z8j" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HeF-yt-Z8j" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="59" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -250,7 +250,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="Lea-UL-gb3"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euk-3V-EoP" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euk-3V-EoP" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="89" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -265,7 +265,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="vBb-Fm-d0b"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMN-2V-GUp" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMN-2V-GUp" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="119" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -280,7 +280,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="02j-V5-DUd"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-ZX-cck" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-ZX-cck" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="149" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -295,7 +295,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="7ec-VQ-hpw"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zab-z4-Cs1" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zab-z4-Cs1" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="179" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -310,7 +310,7 @@
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="p8S-xb-54A"/>
                             </connections>
                         </button>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZF-rI-xHP" customClass="ColorfullButton">
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZF-rI-xHP" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="0.0" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <userDefinedRuntimeAttributes>
@@ -360,6 +360,7 @@
         <image name="annotate" width="32" height="32"/>
         <image name="annotate_selected" width="32" height="32"/>
         <image name="clip" width="32" height="32"/>
+        <image name="paper" width="100" height="100"/>
         <image name="text" width="32" height="32"/>
         <image name="text_selected" width="32" height="32"/>
     </resources>

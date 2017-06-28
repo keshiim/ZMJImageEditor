@@ -586,6 +586,10 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 }
 
 - (void)hiddenTopAndBottomBar:(BOOL)isHide animation:(BOOL)animation {
+    if (self.keyboard.isShow) {
+        [self.keyboard dismissWithAnimation:YES];
+        return;
+    }
     
     [UIView animateWithDuration:animation ? .25f : 0.f delay:0 usingSpringWithDamping:1 initialSpringVelocity:1 options:isHide ? UIViewAnimationOptionCurveEaseOut : UIViewAnimationOptionCurveEaseIn animations:^{
         if (isHide) {

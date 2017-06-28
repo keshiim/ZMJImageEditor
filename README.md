@@ -21,6 +21,9 @@
 3. clip，rotation
 
 ![clip,rotation](https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/clip.gif)
+
+4. 支持贴图(paper) 新增
+
 ## Usage
 
 调起
