@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="17A291j" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,6 +18,7 @@
                 <outlet property="colorPan" destination="sUm-KM-2Ao" id="aBq-pe-bzS"/>
                 <outlet property="imageView" destination="L0E-Hz-dO7" id="8Uo-zs-uHX"/>
                 <outlet property="panButton" destination="vif-ym-mAZ" id="dhq-qL-UOU"/>
+                <outlet property="paperButton" destination="dR4-MJ-4Kq" id="ljA-cj-EGo"/>
                 <outlet property="scrollView" destination="eg2-dz-mJn" id="syX-xc-Eiv"/>
                 <outlet property="sendButton" destination="Li1-F3-HD7" id="ILa-6f-mdo"/>
                 <outlet property="textButton" destination="cnm-kZ-dpx" id="Gv1-I7-f2Y"/>
@@ -113,6 +114,18 @@
                                 <action selector="textAction:" destination="-1" eventType="touchUpInside" id="oFt-qU-bGu"/>
                             </connections>
                         </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR4-MJ-4Kq">
+                            <rect key="frame" x="216" y="8" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="32" id="XkM-kC-bDt"/>
+                                <constraint firstAttribute="width" constant="32" id="xnQ-FJ-ivW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                            <state key="normal" title="img"/>
+                            <connections>
+                                <action selector="paperAction:" destination="-1" eventType="touchUpInside" id="uSp-LB-Pto"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.086274509803921567" green="0.098039215686274508" blue="0.10196078431372549" alpha="0.88" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -122,8 +135,10 @@
                         <constraint firstItem="vif-ym-mAZ" firstAttribute="leading" secondItem="toj-tM-hDH" secondAttribute="leading" constant="30" id="YUN-pQ-RkO"/>
                         <constraint firstItem="cnm-kZ-dpx" firstAttribute="top" secondItem="toj-tM-hDH" secondAttribute="top" constant="8" id="Zgt-TY-nRJ"/>
                         <constraint firstItem="Li1-F3-HD7" firstAttribute="top" secondItem="toj-tM-hDH" secondAttribute="top" id="eM3-F9-LQf"/>
+                        <constraint firstItem="dR4-MJ-4Kq" firstAttribute="leading" secondItem="PFB-Ig-Llj" secondAttribute="trailing" constant="30" id="f5j-TU-z79"/>
                         <constraint firstAttribute="height" constant="49" id="muS-pe-Tkz"/>
                         <constraint firstItem="cnm-kZ-dpx" firstAttribute="leading" secondItem="vif-ym-mAZ" secondAttribute="trailing" constant="30" id="oK2-2d-FfC"/>
+                        <constraint firstItem="dR4-MJ-4Kq" firstAttribute="top" secondItem="toj-tM-hDH" secondAttribute="top" constant="8" id="rnk-P7-lAe"/>
                         <constraint firstAttribute="trailing" secondItem="Li1-F3-HD7" secondAttribute="trailing" id="vGa-es-Xz2"/>
                         <constraint firstAttribute="bottom" secondItem="Li1-F3-HD7" secondAttribute="bottom" id="vzR-cs-bXR"/>
                     </constraints>
@@ -205,21 +220,6 @@
                     <rect key="frame" x="16" y="12" width="26" height="207"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
-                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZF-rI-xHP" customClass="ColorfullButton">
-                            <rect key="frame" x="-17" y="-1" width="60" height="30"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="color" keyPath="color">
-                                    <color key="value" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
-                                    <real key="value" value="9"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                            <connections>
-                                <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="ZhU-vf-xyx"/>
-                            </connections>
-                        </button>
                         <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvM-QN-XqK" customClass="ColorfullButton">
                             <rect key="frame" x="-17" y="29" width="60" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -308,6 +308,21 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="p8S-xb-54A"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZF-rI-xHP" customClass="ColorfullButton">
+                            <rect key="frame" x="-17" y="0.0" width="60" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                    <color key="value" red="1" green="0.14901960784313725" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="9"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buttonAction:" destination="sUm-KM-2Ao" eventType="touchUpInside" id="ZhU-vf-xyx"/>
                             </connections>
                         </button>
                     </subviews>

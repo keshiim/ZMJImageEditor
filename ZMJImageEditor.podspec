@@ -28,4 +28,5 @@ Pod::Spec.new do |s|
 
    s.frameworks = 'UIKit', 'MapKit'
    s.dependency 'YYCategories', '~> 1.0.4'
+   s.dependency 'Masonry',      '~> 1.0.1'
 end

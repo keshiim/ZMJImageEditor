@@ -13,6 +13,7 @@ typedef NS_ENUM(NSUInteger, EditorMode) {
     EditorDrawMode,
     EditorTextMode,
     EditorClipMode,
+    EditorPaperMode,
 };
 
 extern NSString * const kColorPanNotificaiton;

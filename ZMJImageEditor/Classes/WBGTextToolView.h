@@ -18,12 +18,13 @@
 @property (nonatomic, strong) UIColor *borderColor;
 @property (nonatomic, assign) CGFloat borderWidth;
 @property (nonatomic, assign) NSTextAlignment textAlignment;
+@property (nonatomic, strong) UIImage *image;
 
 @property (nonatomic, strong) WBGTextToolOverlapView *archerBGView;
 
 + (void)setActiveTextView:(WBGTextToolView *)view;
 + (void)setInactiveTextView:(WBGTextToolView *)view;
-- (instancetype)initWithTool:(WBGTextTool *)tool text:(NSString *)text font:(UIFont *)font;
+- (instancetype)initWithTool:(WBGTextTool *)tool text:(NSString *)text font:(UIFont *)font orImage:(UIImage *)image;
 - (void)setScale:(CGFloat)scale;
 - (void)sizeToFitWithMaxWidth:(CGFloat)width lineHeight:(CGFloat)lineHeight;
 
@@ -35,6 +36,7 @@
 @property (nonatomic, copy  ) NSString *text;
 @property (nonatomic, strong) UIFont *textFont;
 @property (nonatomic, strong) UIColor *textColor;
+@property (nonatomic, strong) UIImage *image;
 @end
 
 @interface WBGTextLabel : UILabel

@@ -23,6 +23,7 @@ static const CGFloat DELETEBUTTON_BOUNDS = 26.f;
 @property (nonatomic, strong) UIFont *textFont;
 @property (nonatomic, strong) UIColor *textColor;
 @property (nonatomic, assign) CGFloat defaultFont;
+@property (nonatomic, strong) UIImage *image;
 @end
 
 @implementation WBGTextToolOverlapContentView
@@ -49,7 +50,18 @@ static const CGFloat DELETEBUTTON_BOUNDS = 26.f;
     }
 }
 
+- (void)setImage:(UIImage *)image {
+    if (_image != image) {
+        _image = image;
+        [self setNeedsDisplay];
+    }
+}
+
 - (void)drawRect:(CGRect)rect {
+    if (self.image) {
+        [self.image drawInRect:CGRectInset(rect, 21, 25)];
+        return;
+    }
     NSShadow *shadow = [[NSShadow alloc] init];
     shadow.shadowColor = [UIColor grayColor]; //阴影颜色
     shadow.shadowOffset= CGSizeMake(2, 2);//偏移量
@@ -61,6 +73,7 @@ static const CGFloat DELETEBUTTON_BOUNDS = 26.f;
                                                                               NSFontAttributeName : self.textFont,
                                                                               NSShadowAttributeName: shadow}];
     [string drawInRect:CGRectInset(rect, 21, 25)];
+    
 }
 
 @end
@@ -99,6 +112,13 @@ static const CGFloat DELETEBUTTON_BOUNDS = 26.f;
         _textFont = textFont;
         _contentView.defaultFont = textFont.pointSize;
         [_contentView setTextFont:_textFont];
+    }
+}
+
+- (void)setImage:(UIImage *)image {
+    if (_image != image) {
+        _image = image;
+        [_contentView setImage:image];
     }
 }
 
@@ -161,7 +181,7 @@ static WBGTextToolView *activeView = nil;
     [view setAvtive:NO];
 }
 
-- (instancetype)initWithTool:(WBGTextTool *)tool text:(NSString *)text font:(UIFont *)font
+- (instancetype)initWithTool:(WBGTextTool *)tool text:(NSString *)text font:(UIFont *)font orImage:(UIImage *)image
 {
     self = [super initWithFrame:CGRectMake(0, 0, 132, 132)];
     if(self){
@@ -185,7 +205,26 @@ static WBGTextToolView *activeView = nil;
         
         CGSize size = [_label sizeThatFits:CGSizeMake(tool.editor.drawingView.width - 2*LABEL_OFFSET, FLT_MAX)];
         _label.frame = CGRectMake(LABEL_OFFSET, LABEL_OFFSET, size.width + 20, size.height + _label.font.pointSize);
-        
+#define IMAGE_MAXSIZE 200
+        if (image) {
+            CGSize imageSize = image.size;
+            CGFloat DI = imageSize.width / imageSize.height; //宽高比例
+            CGFloat maxLength = MAX(imageSize.width, imageSize.height);
+            
+            if (maxLength > IMAGE_MAXSIZE) {
+                maxLength = IMAGE_MAXSIZE;
+                if (maxLength == imageSize.height) {
+                    imageSize.height = maxLength;
+                    imageSize.width = maxLength * DI;
+                } else if (maxLength == imageSize.width) {
+                    imageSize.width = maxLength;
+                    imageSize.height = maxLength / DI;
+                }
+            }
+
+            
+            _label.frame = CGRectMake(LABEL_OFFSET, LABEL_OFFSET, imageSize.width, imageSize.height);
+        }
         self.frame = CGRectMake(0, 0, _label.width + 2*LABEL_OFFSET, _label.height + 2*LABEL_OFFSET);
         
         _deleteButton = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -584,8 +623,15 @@ static WBGTextToolView *activeView = nil;
 {
     if(![text isEqualToString:_text]){
         _text = text;
-        _label.text = (_text.length>0) ? _text : @"文字";
+        _label.text = (_text.length>0) ? _text : @"";
         _archerBGView.text = _label.text;
+    }
+}
+
+- (void)setImage:(UIImage *)image {
+    if (_image != image) {
+        _image = image;
+        _archerBGView.image = image;
     }
 }
 

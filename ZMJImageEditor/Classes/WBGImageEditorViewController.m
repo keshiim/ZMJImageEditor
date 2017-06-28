@@ -16,13 +16,14 @@
 #import "WBGTextToolView.h"
 #import "UIView+YYAdd.h"
 #import "WBGImageEditor.h"
+#import "WBGMoreKeyboard.h"
 
 @import YYCategories;
 
 NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 #pragma mark - WBGImageEditorViewController
 
-@interface WBGImageEditorViewController () <UINavigationBarDelegate, UIScrollViewDelegate, TOCropViewControllerDelegate> {
+@interface WBGImageEditorViewController () <UINavigationBarDelegate, UIScrollViewDelegate, TOCropViewControllerDelegate, WBGMoreKeyboardDelegate, WBGKeyboardDelegate> {
     
     __weak IBOutlet NSLayoutConstraint *topBarTop;
     __weak IBOutlet NSLayoutConstraint *bottomBarBottom;
@@ -45,6 +46,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 @property (weak, nonatomic) IBOutlet UIButton *panButton;
 @property (weak, nonatomic) IBOutlet UIButton *textButton;
 @property (weak, nonatomic) IBOutlet UIButton *clipButton;
+@property (weak, nonatomic) IBOutlet UIButton *paperButton;
 
 @property (nonatomic, strong) WBGDrawTool *drawTool;
 @property (nonatomic, strong) WBGTextTool *textTool;
@@ -53,6 +55,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 @property (nonatomic, assign) CGFloat clipInitScale;
 @property (nonatomic, assign) BOOL barsHiddenStatus;
+@property (nonatomic, strong) WBGMoreKeyboard *keyboard;
 
 @end
 
@@ -78,15 +81,16 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 - (id)initWithImage:(UIImage *)image
 {
-    return [self initWithImage:image delegate:nil];
+    return [self initWithImage:image delegate:nil dataSource:nil];
 }
 
-- (id)initWithImage:(UIImage*)image delegate:(id<WBGImageEditorDelegate>)delegate
+- (id)initWithImage:(UIImage*)image delegate:(id<WBGImageEditorDelegate>)delegate dataSource:(id<WBGImageEditorDataSource>)dataSource;
 {
     self = [self init];
     if (self){
         _originImage = image;
         self.delegate = delegate;
+        self.dataSource = dataSource;
     }
     return self;
 }
@@ -411,6 +415,22 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     [self hiddenColorPan:YES animation:YES];
 }
 
+//贴图模式
+- (IBAction)paperAction:(UIButton *)sender {
+    if (_currentMode == EditorTextMode) {
+        return;
+    }
+    self.currentMode = EditorPaperMode;
+    
+    NSArray<WBGMoreKeyboardItem *> *sources = nil;
+    if (self.dataSource) {
+        sources = [self.dataSource imageItemsEditor:self];
+    }
+    //贴图模块
+    [self.keyboard setChatMoreKeyboardData:sources];
+    [self.keyboard showInView:self.view withAnimation:YES];
+}
+
 - (IBAction)backAction:(UIButton *)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -446,6 +466,34 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     self.currentMode = EditorNonMode;
     self.currentTool = nil;
 }
+
+- (WBGMoreKeyboard *)keyboard {
+    if (!_keyboard) {
+        WBGMoreKeyboard *keyboard = [WBGMoreKeyboard keyboard];
+        [keyboard setKeyboardDelegate:self];
+        [keyboard setDelegate:self];
+        _keyboard = keyboard;
+    }
+    return _keyboard;
+}
+
+#pragma mark - WBGMoreKeyboardDelegate
+- (void) moreKeyboard:(id)keyboard didSelectedFunctionItem:(WBGMoreKeyboardItem *)funcItem {
+    WBGMoreKeyboard *kb = (WBGMoreKeyboard *)keyboard;
+    [kb dismissWithAnimation:YES];
+    
+    
+    WBGTextToolView *view = [[WBGTextToolView alloc] initWithTool:self.textTool text:@"" font:nil orImage:funcItem.image];
+    view.borderColor = [UIColor whiteColor];
+    view.image = funcItem.image;
+    view.center = [self.imageView.superview convertPoint:self.imageView.center toView:self.drawingView];
+    view.userInteractionEnabled = YES;
+    [self.drawingView addSubview:view];
+    [WBGTextToolView setActiveTextView:view];
+    
+}
+
+#pragma mark - WBGKeyboardDelegate
 
 #pragma mark - Cropper Delegate
 - (void)cropViewController:(TOCropViewController *)cropViewController didCropToImage:(UIImage *)image withRect:(CGRect)cropRect angle:(NSInteger)angle

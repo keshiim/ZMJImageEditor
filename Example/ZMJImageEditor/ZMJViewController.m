@@ -8,8 +8,8 @@
 
 #import "ZMJViewController.h"
 #import <ZMJImageEditor/WBGImageEditor.h>
-
-@interface ZMJViewController () <WBGImageEditorDelegate>
+#import <ZMJImageEditor/WBGMoreKeyboardItem.h>
+@interface ZMJViewController () <WBGImageEditorDelegate, WBGImageEditorDataSource>
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
@@ -26,7 +26,7 @@
 
 - (IBAction)editButtonAction:(UIBarButtonItem *)sender {
     if (self.imageView.image) {
-        WBGImageEditor *editor = [[WBGImageEditor alloc] initWithImage:_imageView.image delegate:self];
+        WBGImageEditor *editor = [[WBGImageEditor alloc] initWithImage:_imageView.image delegate:self dataSource:self];
         [self presentViewController:editor animated:YES completion:nil];
     } else {
         NSLog(@"木有图片");
@@ -42,6 +42,14 @@
 
 - (void)imageEditorDidCancel:(WBGImageEditor *)editor {
     
+}
+
+#pragma mark - WBGImageEditorDataSource
+- (NSArray<WBGMoreKeyboardItem *> *)imageItemsEditor:(WBGImageEditor *)editor {
+    return @[
+             [WBGMoreKeyboardItem createByTitle:@"p1" imagePath:@"p1" image:[UIImage imageNamed:@"p1"]],
+             [WBGMoreKeyboardItem createByTitle:@"p2" imagePath:@"p2" image:[UIImage imageNamed:@"p2"]]
+             ];
 }
 
 - (void)didReceiveMemoryWarning

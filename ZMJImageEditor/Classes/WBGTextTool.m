@@ -76,7 +76,7 @@ static const NSInteger kTextMaxLimitNumber = 100;
         return;
     }
     
-    WBGTextToolView *view = [[WBGTextToolView alloc] initWithTool:self text:text font:self.textView.textView.font];
+    WBGTextToolView *view = [[WBGTextToolView alloc] initWithTool:self text:text font:self.textView.textView.font orImage:nil];
     view.fillColor = self.editor.colorPan.currentColor;
     view.borderColor = [UIColor whiteColor];
     view.font = self.textView.textView.font;

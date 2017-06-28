@@ -22,12 +22,12 @@
 
 - (id)initWithImage:(UIImage*)image
 {
-    return [self initWithImage:image delegate:nil];
+    return [self initWithImage:image delegate:nil dataSource:nil];
 }
 
-- (id)initWithImage:(UIImage*)image delegate:(id<WBGImageEditorDelegate>)delegate
+- (id)initWithImage:(UIImage*)image delegate:(id<WBGImageEditorDelegate>)delegate dataSource:(id<WBGImageEditorDataSource>)dataSource;
 {
-    return [[WBGImageEditorViewController alloc] initWithImage:image delegate:delegate];
+    return [[WBGImageEditorViewController alloc] initWithImage:image delegate:delegate dataSource:dataSource];
 }
 
 - (id)initWithDelegate:(id<WBGImageEditorDelegate>)delegate

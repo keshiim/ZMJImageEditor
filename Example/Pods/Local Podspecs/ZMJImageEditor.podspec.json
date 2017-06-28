@@ -1,7 +1,7 @@
 {
   "name": "ZMJImageEditor",
-  "version": "0.1.0",
-  "summary": "ZMJImageEditor 是一个仿微信图片编辑的组件",
+  "version": "0.1.4",
+  "summary": "ZMJImageEditor 是一个和微信一样图片编辑的组件，功能强大，极易集成",
   "homepage": "https://github.com/keshiim/ZMJImageEditor",
   "license": {
     "type": "MIT",
@@ -12,7 +12,7 @@
   },
   "source": {
     "git": "https://github.com/keshiim/ZMJImageEditor.git",
-    "tag": "0.1.0"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "7.0"
@@ -30,6 +30,9 @@
   "dependencies": {
     "YYCategories": [
       "~> 1.0.4"
+    ],
+    "Masonry": [
+      "~> 1.0.1"
     ]
   }
 }
