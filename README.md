@@ -46,6 +46,17 @@ self.imageView.image = image;
 }
 ```
 
+增加了图片资源回调
+
+``` Objective-c
+#pragma mark - WBGImageEditorDataSource
+- (NSArray<WBGMoreKeyboardItem *> *)imageItemsEditor:(WBGImageEditor *)editor {
+    return @[
+             [WBGMoreKeyboardItem createByTitle:@"p1" imagePath:@"p1" image:[UIImage imageNamed:@"p1"]],
+             [WBGMoreKeyboardItem createByTitle:@"p2" imagePath:@"p2" image:[UIImage imageNamed:@"p2"]]
+             ];
+}
+```
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -72,3 +83,5 @@ keshiim, keshiim@163.com
 ## License
 
 ZMJImageEditor is available under the MIT license. See the LICENSE file for more info.
+
+
