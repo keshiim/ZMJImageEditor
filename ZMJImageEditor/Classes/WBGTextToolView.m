@@ -170,6 +170,7 @@ static WBGTextToolView *activeView = nil;
         activeView = view;
         [activeView setAvtive:YES];
         
+        [activeView.archerBGView.superview bringSubviewToFront:activeView.archerBGView];
         [activeView.superview bringSubviewToFront:activeView];
         
     }
