@@ -157,7 +157,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     
     [valibleCompoment enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
         CGRect originFrame = button.frame;
-        originFrame.origin.x = idx == 0 ?(idx + 1) * 30.f : (idx + 1) * 30.f + originFrame.size.width;
+        originFrame.origin.x = idx == 0 ?(idx + 1) * 30.f : (idx + 1) * 30.f + originFrame.size.width * idx;
         button.frame = originFrame;
     }];
 }
@@ -762,7 +762,9 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 }
 
 - (UIColor *)currentColor {
-    _currentColor = [self.dataSource imageEditorDefaultColor] ?: UIColor.redColor;
+    if (_currentColor == nil) {
+        _currentColor = [self.dataSource imageEditorDefaultColor] ?: UIColor.redColor;
+    }
     return _currentColor;
 }
 
