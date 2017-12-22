@@ -120,7 +120,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     @weakify(self);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         @strongify(self)
-        if ([self.dataSource imageEditorCompoment] & WBGImageEditorDrawComponent) {
+        if ([self.dataSource respondsToSelector:@selector(imageEditorCompoment)] && [self.dataSource imageEditorCompoment] & WBGImageEditorDrawComponent) {
             [self.panButton sendActionsForControlEvents:UIControlEventTouchUpInside];
         }
     });
@@ -263,7 +263,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
         _drawTool.drawingDidTap = ^(void) {
             [weakSelf hiddenTopAndBottomBar:!weakSelf.barsHiddenStatus animation:YES];
         };
-        _drawTool.pathWidth = [self.dataSource imageEditorDrawPathWidth].floatValue;
+        _drawTool.pathWidth = [self.dataSource respondsToSelector:@selector(imageEditorDrawPathWidth)] ? [self.dataSource imageEditorDrawPathWidth].floatValue : 5.0f;
     }
     
     return _drawTool;
@@ -763,7 +763,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 - (UIColor *)currentColor {
     if (_currentColor == nil) {
-        _currentColor = [self.dataSource imageEditorDefaultColor] ?: UIColor.redColor;
+        _currentColor = ([self.dataSource respondsToSelector:@selector(imageEditorDefaultColor)] && [self.dataSource imageEditorDefaultColor]) ? [self.dataSource imageEditorDefaultColor] : UIColor.redColor;
     }
     return _currentColor;
 }
