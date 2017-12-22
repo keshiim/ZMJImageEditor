@@ -11,6 +11,20 @@
 @protocol WBGImageEditorDelegate, WBGImageEditorTransitionDelegate, WBGImageEditorDataSource;
 @class WBGMoreKeyboardItem;
 
+typedef NS_OPTIONS(NSInteger, WBGImageEditorComponent) {
+    WBGImageEditorDrawComponent = 1 << 0,
+    WBGImageEditorTextComponent = 1 << 1,
+    WBGImageEditorClipComponent = 1 << 2,
+    WBGImageEditorPaperComponent = 1 << 3,
+    WBGImageEditorColorPanComponent = 1 << 4,
+    //all
+    WBGImageEditorWholeComponent = WBGImageEditorDrawComponent
+                                 | WBGImageEditorTextComponent
+                                 | WBGImageEditorClipComponent
+                                 | WBGImageEditorPaperComponent
+                                 | WBGImageEditorColorPanComponent,
+};
+
 @interface WBGImageEditor : UIViewController
 
 @property (nonatomic, weak) id<WBGImageEditorDelegate> delegate;
@@ -25,7 +39,7 @@
 @end
 
 
-
+#pragma mark - Protocol
 @protocol WBGImageEditorDelegate <NSObject>
 @optional
 - (void)imageEditor:(WBGImageEditor *)editor didFinishEdittingWithImage:(UIImage *)image;
@@ -37,7 +51,11 @@
 
 @required
 - (NSArray<WBGMoreKeyboardItem *> *)imageItemsEditor:(WBGImageEditor *)editor;
+- (WBGImageEditorComponent)imageEditorCompoment;
 
+@optional
+- (UIColor *)imageEditorDefaultColor;
+- (NSNumber *)imageEditorDrawPathWidth;
 @end
 
 

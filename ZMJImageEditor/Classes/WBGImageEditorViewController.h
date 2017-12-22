@@ -20,6 +20,7 @@ extern NSString * const kColorPanNotificaiton;
 
 @interface WBGColorPan : UIView
 @property (nonatomic, strong, readonly) UIColor *currentColor;
+@property (nonatomic, weak) id<WBGImageEditorDataSource> dataSource;
 @end
 
 @interface WBGImageEditorViewController : WBGImageEditor

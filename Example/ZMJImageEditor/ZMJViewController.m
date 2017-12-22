@@ -52,6 +52,18 @@
              ];
 }
 
+- (WBGImageEditorComponent)imageEditorCompoment {
+    return WBGImageEditorDrawComponent;
+}
+
+- (UIColor *)imageEditorDefaultColor {
+    return UIColor.blackColor;
+}
+
+- (NSNumber *)imageEditorDrawPathWidth {
+    return @(15.f);
+}
+#pragma mark - ------line------
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

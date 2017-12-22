@@ -59,7 +59,7 @@
         }
         
         // 初始化一个UIBezierPath对象, 把起始点存储到UIBezierPath对象中, 用来存储所有的轨迹点
-        WBGPath *path = [WBGPath pathToPoint:currentDraggingPosition pathWidth:MAX(1, 4)];
+        WBGPath *path = [WBGPath pathToPoint:currentDraggingPosition pathWidth:MAX(1, self.pathWidth)];
         path.pathColor         = self.editor.colorPan.currentColor;
         path.shape.strokeColor = self.editor.colorPan.currentColor.CGColor;
         [_allLineMutableArray addObject:path];
@@ -131,7 +131,7 @@
         self.panGesture.enabled = YES;
     }
     
-    //点击收拾
+    //点击手势
     if (!self.tapGesture) {
         self.tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(drawingViewDidTap:)];
         self.tapGesture.delegate = [WBGImageEditorGestureManager instance];

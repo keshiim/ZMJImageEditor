@@ -112,15 +112,25 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     self.undoButton.hidden = YES;
     
     self.colorPan.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 100, self.colorPan.bounds.size.width, self.colorPan.bounds.size.height);
+    self.colorPan.dataSource = self.dataSource;
     [self.view addSubview:_colorPan];
     
     [self initImageScrollView];
     
+    @weakify(self);
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(.25 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [self.panButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+        @strongify(self)
+        if ([self.dataSource imageEditorCompoment] & WBGImageEditorDrawComponent) {
+            [self.panButton sendActionsForControlEvents:UIControlEventTouchUpInside];
+        }
     });
+    
+    self.panButton.hidden = YES;
+    self.textButton.hidden = YES;
+    self.clipButton.hidden = YES;
+    self.paperButton.hidden = YES;
+    self.colorPan.hidden = YES;
 }
-
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -130,6 +140,26 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
       //  HideBusyIndicatorForView(self.view);
         [self refreshImageView];
     });
+    
+    //获取自定制组件 - fecth custom config
+    [self configCustomComponent];
+}
+
+- (void)configCustomComponent {
+    NSMutableArray *valibleCompoment = NSMutableArray.new;
+    WBGImageEditorComponent curComponent = [self.dataSource imageEditorCompoment];
+    if (curComponent == 0) { curComponent = WBGImageEditorWholeComponent; }
+    if (curComponent & WBGImageEditorDrawComponent) { self.panButton.hidden = NO; [valibleCompoment addObject:self.panButton]; }
+    if (curComponent & WBGImageEditorTextComponent) { self.textButton.hidden = NO; [valibleCompoment addObject:self.textButton]; }
+    if (curComponent & WBGImageEditorClipComponent) { self.clipButton.hidden = NO; [valibleCompoment addObject:self.clipButton]; }
+    if (curComponent & WBGImageEditorPaperComponent) { self.paperButton.hidden = NO; [valibleCompoment addObject:self.paperButton]; }
+    if (curComponent & WBGImageEditorColorPanComponent) { self.colorPan.hidden = NO; }
+    
+    [valibleCompoment enumerateObjectsUsingBlock:^(UIButton * _Nonnull button, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGRect originFrame = button.frame;
+        originFrame.origin.x = idx == 0 ?(idx + 1) * 30.f : (idx + 1) * 30.f + originFrame.size.width;
+        button.frame = originFrame;
+    }];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -151,6 +181,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
         self.drawingView.contentMode = UIViewContentModeCenter;
         self.drawingView.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin;
         [self.imageView.superview addSubview:self.drawingView];
+        self.drawingView.userInteractionEnabled = YES;
     } else {
         //self.drawingView.frame = self.imageView.superview.frame;
     }
@@ -232,6 +263,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
         _drawTool.drawingDidTap = ^(void) {
             [weakSelf hiddenTopAndBottomBar:!weakSelf.barsHiddenStatus animation:YES];
         };
+        _drawTool.pathWidth = [self.dataSource imageEditorDrawPathWidth].floatValue;
     }
     
     return _drawTool;
@@ -715,7 +747,6 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 {
     self = [super init];
     if (self) {
-        _currentColor = [UIColor redColor];
         //[self addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panSelectColor:)]];
     }
     return self;
@@ -725,10 +756,14 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 {
     self = [super initWithCoder:coder];
     if (self) {
-        _currentColor = [UIColor redColor];
         //[self addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panSelectColor:)]];
     }
     return self;
+}
+
+- (UIColor *)currentColor {
+    _currentColor = [self.dataSource imageEditorDefaultColor] ?: UIColor.redColor;
+    return _currentColor;
 }
 
 - (void)dealloc
