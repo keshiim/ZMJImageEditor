@@ -6,7 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZMJImageEditor.svg?style=flat)](http://cocoapods.org/pods/ZMJImageEditor)
 
 ## 功能介绍
-Tailoring, graffiti, and writing. All kinds of rotations are done well, if you have bug, welcome issue, and the following are several GIF (剪裁、涂鸦、文字。各种旋转各种好完，如果有bug，欢迎issue，下面是几个介绍功能的GIF)
+Tailoring, graffiti, and writing. All kinds of rotations are done well, if you have bug, welcome issue, and the following are several GIF, support Internationale-localizable (剪裁、涂鸦、文字。各种旋转各种好完，如果有bug，欢迎issue，下面是几个介绍功能的GIF，支持国际化)
 
 1. draw功能
 
