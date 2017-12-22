@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "发送"; ObjectID = "Li1-F3-HD7"; */
+"Li1-F3-HD7.normalTitle" = "Send";
+
+/* Class = "UIButton"; normalTitle = "返回"; ObjectID = "U1E-fP-iEK"; */
+"U1E-fP-iEK.normalTitle" = "Back";
+
+/* Class = "UIButton"; normalTitle = "撤销"; ObjectID = "yeV-aj-vVt"; */
+"yeV-aj-vVt.normalTitle" = "Undo";

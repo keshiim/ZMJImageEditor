@@ -23,7 +23,12 @@ Pod::Spec.new do |s|
    s.resource = [
      'ZMJImageEditor/Assets/*.png',
      'ZMJImageEditor/Assets/*.{xib,storyboard}',
-     'ZMJImageEditor/Assets/*.{pdf,xcassets}'
+     'ZMJImageEditor/Assets/*.{pdf,xcassets}',
+     'ZMJImageEditor/Assets/*.{lproj}',
+     'ZMJImageEditor/Assets/**/*.png',
+     'ZMJImageEditor/Assets/**/*.{xib,storyboard}',
+     'ZMJImageEditor/Assets/**/*.{pdf,xcassets}',
+     'ZMJImageEditor/Assets/**/*.{strings}'
      ]
 
    s.frameworks = 'UIKit', 'MapKit'

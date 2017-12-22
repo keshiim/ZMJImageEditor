@@ -8,7 +8,7 @@ PODS:
   - YYCategories (1.0.4):
     - YYCategories/no-arc (= 1.0.4)
   - YYCategories/no-arc (1.0.4)
-  - ZMJImageEditor (0.1.4):
+  - ZMJImageEditor (0.2.0):
     - Masonry (~> 1.0.1)
     - YYCategories (~> 1.0.4)
 
@@ -18,14 +18,14 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ZMJImageEditor:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
-  ZMJImageEditor: 47d01cbc6e24fa42c90dd8953d83394ed9388b22
+  ZMJImageEditor: f165d643f7e4af67cfe701e645f7b5e995d8f3cd
 
 PODFILE CHECKSUM: 3c1d7a8afef6c42e332459f25ea9f8fb135c636f
 
-COCOAPODS: 1.2.1
+COCOAPODS: 1.3.0.beta.2
