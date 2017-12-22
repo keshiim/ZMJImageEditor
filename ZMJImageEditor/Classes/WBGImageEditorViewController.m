@@ -147,7 +147,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 - (void)configCustomComponent {
     NSMutableArray *valibleCompoment = NSMutableArray.new;
-    WBGImageEditorComponent curComponent = [self.dataSource imageEditorCompoment];
+    WBGImageEditorComponent curComponent = [self.dataSource respondsToSelector:@selector(imageEditorCompoment)] ? [self.dataSource imageEditorCompoment] : 0;
     if (curComponent == 0) { curComponent = WBGImageEditorWholeComponent; }
     if (curComponent & WBGImageEditorDrawComponent) { self.panButton.hidden = NO; [valibleCompoment addObject:self.panButton]; }
     if (curComponent & WBGImageEditorTextComponent) { self.textButton.hidden = NO; [valibleCompoment addObject:self.textButton]; }
