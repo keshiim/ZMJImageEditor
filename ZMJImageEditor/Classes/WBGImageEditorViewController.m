@@ -17,6 +17,7 @@
 #import "UIView+YYAdd.h"
 #import "WBGImageEditor.h"
 #import "WBGMoreKeyboard.h"
+#import "WBGMosicaViewController.h"
 
 @import YYCategories;
 
@@ -111,7 +112,8 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     
     self.undoButton.hidden = YES;
     
-    self.colorPan.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 100, self.colorPan.bounds.size.width, self.colorPan.bounds.size.height);
+//    self.colorPan.frame = CGRectMake([UIScreen mainScreen].bounds.size.width - 60, 100, self.colorPan.bounds.size.width, self.colorPan.bounds.size.height);
+    self.colorPan.frame = CGRectMake(0, [UIScreen mainScreen].bounds.size.height-99, [UIScreen mainScreen].bounds.size.width, 50);
     self.colorPan.dataSource = self.dataSource;
     [self.view addSubview:_colorPan];
     
@@ -454,13 +456,48 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     }
     self.currentMode = EditorPaperMode;
     
-    NSArray<WBGMoreKeyboardItem *> *sources = nil;
-    if (self.dataSource) {
-        sources = [self.dataSource imageItemsEditor:self];
-    }
-    //贴图模块
-    [self.keyboard setChatMoreKeyboardData:sources];
-    [self.keyboard showInView:self.view withAnimation:YES];
+    __weak typeof(self)weakSelf = self;
+    [self buildClipImageShowHud:NO clipedCallback:^(UIImage *clipedImage) {
+        typeof (self) strongSelf = weakSelf;
+        CGRect viewFrame = [strongSelf.view convertRect:strongSelf.imageView.frame toView:strongSelf.navigationController.view];
+        
+        WBGMosicaViewController *vc = [[WBGMosicaViewController alloc] initWithImage:clipedImage frame:viewFrame];
+        __weak typeof(self)weakSelf = strongSelf;
+        
+        vc.mosicaCallback = ^(UIImage *mosicaImage) {
+            typeof (self) strongSelf = weakSelf;
+            self.imageView.image = mosicaImage;
+            CGRect bounds = strongSelf.drawingView.bounds;
+            bounds.size = CGSizeMake(bounds.size.width/strongSelf.clipInitScale, bounds.size.height/self.clipInitScale);
+            
+            [strongSelf refreshImageView];
+            [strongSelf viewDidLayoutSubviews];
+            
+            strongSelf.navigationItem.rightBarButtonItem.enabled = YES;
+            
+            //生成图片后，清空画布内容
+            [strongSelf.drawTool.allLineMutableArray removeAllObjects];
+            [strongSelf.drawTool drawLine];
+            [strongSelf.drawingView removeAllSubviews];
+            strongSelf.undoButton.hidden = YES;
+        };
+        
+        [weakSelf presentViewController:vc animated:YES completion:^{
+            typeof (self) strongSelf = weakSelf;
+            [strongSelf refreshImageView];
+            strongSelf.colorPan.hidden = YES;
+            strongSelf.currentMode = EditorClipMode;
+            [strongSelf setCurrentTool:nil];
+        }];
+    }];
+    
+//    NSArray<WBGMoreKeyboardItem *> *sources = nil;
+//    if (self.dataSource) {
+//        sources = [self.dataSource imageItemsEditor:self];
+//    }
+//    //贴图模块
+//    [self.keyboard setChatMoreKeyboardData:sources];
+//    [self.keyboard showInView:self.view withAnimation:YES];
 }
 
 - (IBAction)backAction:(UIButton *)sender {
@@ -659,7 +696,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     if (showHud) {
         //ShowBusyTextIndicatorForView(self.view, @"生成图片中...", nil);
     }
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         CGFloat WS = self.imageView.width/ self.drawingView.width;
         CGFloat HS = self.imageView.height/ self.drawingView.height;
         
@@ -704,7 +741,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
             clipedCallback(image);
             
         });
-    });
+//    });
 }
 
 + (UIImage *)screenshot:(UIView *)view orientation:(UIDeviceOrientation)orientation usePresentationLayer:(BOOL)usePresentationLayer
