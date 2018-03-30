@@ -40,10 +40,10 @@ IB_DESIGNABLE
     layer.fillColor = _color.CGColor;
     layer.allowsEdgeAntialiasing = YES;
     layer.backgroundColor = [UIColor clearColor].CGColor;
-    if (_isUse) {
+//    if (_isUse) {
         layer.strokeColor = [UIColor whiteColor].CGColor;
         layer.lineWidth = 2.f;
-    }
+//    }
     layer.path = path.CGPath;
     [path fill];
     UIGraphicsEndImageContext();
