@@ -699,17 +699,20 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         CGFloat WS = self.imageView.width/ self.drawingView.width;
         CGFloat HS = self.imageView.height/ self.drawingView.height;
-        
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
         UIGraphicsBeginImageContextWithOptions(CGSizeMake(self.imageView.image.size.width, self.imageView.image.size.height),
                                                NO,
                                                self.imageView.image.scale);
+    });
+    
         [self.imageView.image drawAtPoint:CGPointZero];
         CGFloat viewToimgW = self.imageView.width/self.imageView.image.size.width;
         CGFloat viewToimgH = self.imageView.height/self.imageView.image.size.height;
         __unused CGFloat drawX = self.imageView.left/viewToimgW;
         CGFloat drawY = self.imageView.top/viewToimgH;
         [_drawingView.image drawInRect:CGRectMake(0, -drawY, self.imageView.image.size.width/WS, self.imageView.image.size.height/HS)];
-        
+    dispatch_async(dispatch_get_main_queue(), ^{
         for (UIView *subV in _drawingView.subviews) {
             if ([subV isKindOfClass:[WBGTextToolView class]]) {
                 WBGTextToolView *textLabel = (WBGTextToolView *)subV;
@@ -717,7 +720,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
                 [WBGTextToolView setInactiveTextView:textLabel];
                 
                 //生成图片
-                 __unused UIView *tes = textLabel.archerBGView;
+                __unused UIView *tes = textLabel.archerBGView;
                 UIImage *textImg = [self.class screenshot:textLabel.archerBGView orientation:UIDeviceOrientationPortrait usePresentationLayer:YES];
                 CGFloat rotation = textLabel.archerBGView.layer.transformRotationZ;
                 textImg = [textImg imageRotatedByRadians:rotation];
@@ -731,7 +734,8 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
                 [textImg drawInRect:CGRectMake(textLabel.left/selfRw, (textLabel.top/selfRh) - drawY, sw, sh)];
             }
         }
-        
+    });
+    
         UIImage *tmp = UIGraphicsGetImageFromCurrentImageContext();
         UIGraphicsEndImageContext();
         
@@ -746,14 +750,18 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 + (UIImage *)screenshot:(UIView *)view orientation:(UIDeviceOrientation)orientation usePresentationLayer:(BOOL)usePresentationLayer
 {
-    CGSize size = view.bounds.size;
-    CGSize targetSize = CGSizeMake(size.width * view.layer.transformScaleX, size.height *  view.layer.transformScaleY);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        CGSize size = view.bounds.size;
+        CGSize targetSize = CGSizeMake(size.width * view.layer.transformScaleX, size.height *  view.layer.transformScaleY);
+    }):
     
     UIGraphicsBeginImageContextWithOptions(targetSize, NO, [UIScreen mainScreen].scale);
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     CGContextSaveGState(ctx);
-    [view drawViewHierarchyInRect:CGRectMake(0, 0, targetSize.width, targetSize.height) afterScreenUpdates:NO];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [view drawViewHierarchyInRect:CGRectMake(0, 0, targetSize.width, targetSize.height) afterScreenUpdates:NO];
+    }):
     CGContextRestoreGState(ctx);
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();

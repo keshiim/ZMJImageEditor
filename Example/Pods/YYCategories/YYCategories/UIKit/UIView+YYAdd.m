@@ -214,7 +214,9 @@ YYSYNTH_DUMMY_CLASS(UIView_YYAdd)
 }
 
 - (CGFloat)width {
-    return self.frame.size.width;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        return self.frame.size.width;
+    });
 }
 
 - (void)setWidth:(CGFloat)width {
