@@ -26,8 +26,6 @@
 		0757CB14206E308300CD8D2C /* XRGBTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757CB0E206E308300CD8D2C /* XRGBTool.m */; };
 		0757CB15206E308300CD8D2C /* XScratchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0757CB0F206E308300CD8D2C /* XScratchView.h */; };
 		0757CB16206E308300CD8D2C /* XScratchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757CB10206E308300CD8D2C /* XScratchView.m */; };
-		0757CB19206E309000CD8D2C /* WBGMosicaViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 0757CB17206E309000CD8D2C /* WBGMosicaViewController.h */; };
-		0757CB1A206E309000CD8D2C /* WBGMosicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0757CB18206E309000CD8D2C /* WBGMosicaViewController.m */; };
 		091D17D5D8F832D28546A72B788CF0AE /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = BD6CD12291F1CB7C3FBAB53758A2EF88 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A8230463EEE6D7A300682E1F2E44E0B /* WBGImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8613FA428BF8B7F995A7B2E84ED7AC25 /* WBGImageEditor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		0C9B209BEA71E9FC659FC42C4A5B6566 /* YYCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B52149B987D9698FCD3F7F29DF85E03 /* YYCGUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -215,6 +213,10 @@
 		F2C18CF570892C6E866C8FE5F95FBA86 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 291387DE3D86FABC569886F4EE5168A3 /* Foundation.framework */; };
 		F33986F4969B4F178AF9EB568FE8B1AA /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AED6821773B8C28A065F99528E0044DF /* FBSnapshotTestCase-dummy.m */; };
 		F3AAF979FB520FB55D8BC22298FB3774 /* TOCropScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = 8BE48DD809956365A0311A9C7B63A758 /* TOCropScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F51600EA2074955D00656DF6 /* WBGMosicaViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F51600E82074955D00656DF6 /* WBGMosicaViewController.h */; };
+		F51600EB2074955D00656DF6 /* WBGMosicaViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = F51600E82074955D00656DF6 /* WBGMosicaViewController.h */; };
+		F51600EC2074955D00656DF6 /* WBGMosicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51600E92074955D00656DF6 /* WBGMosicaViewController.m */; };
+		F51600ED2074955D00656DF6 /* WBGMosicaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51600E92074955D00656DF6 /* WBGMosicaViewController.m */; };
 		F7EEF93BF045A409C784256E16292B58 /* WBGBaseKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = DC925F77A9191A75A7E228DD5B4530D1 /* WBGBaseKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F99F266E6438E33DA9ACEE7A3FC2BF39 /* WBGKeyboardDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 01D58AE2EDF19E304F41CB90D07A083F /* WBGKeyboardDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FA152FFEF2D7F6BEE845AB8FF75CC534 /* WBGMoreKeyboard+CollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = F624293C1C4F12DC8176653E123AC143 /* WBGMoreKeyboard+CollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -291,8 +293,6 @@
 		0757CB0E206E308300CD8D2C /* XRGBTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XRGBTool.m; sourceTree = "<group>"; };
 		0757CB0F206E308300CD8D2C /* XScratchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XScratchView.h; sourceTree = "<group>"; };
 		0757CB10206E308300CD8D2C /* XScratchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XScratchView.m; sourceTree = "<group>"; };
-		0757CB17206E309000CD8D2C /* WBGMosicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMosicaViewController.h; sourceTree = "<group>"; };
-		0757CB18206E309000CD8D2C /* WBGMosicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMosicaViewController.m; sourceTree = "<group>"; };
 		08D7733E18EFAE68E2825697D10BF492 /* TOCropViewControllerLocalizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = TOCropViewControllerLocalizable.strings; path = "zh-Hant.lproj/TOCropViewControllerLocalizable.strings"; sourceTree = "<group>"; };
 		0B52149B987D9698FCD3F7F29DF85E03 /* YYCGUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYCGUtilities.m; path = YYCategories/Quartz/YYCGUtilities.m; sourceTree = "<group>"; };
 		0C21DFC83416C5A7A77DC6F9E4B4A431 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
@@ -520,6 +520,8 @@
 		F465B2658F83F58E635A4EA1334B7B5B /* ColorfullButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ColorfullButton.m; path = ZMJImageEditor/Classes/ColorfullButton.m; sourceTree = "<group>"; };
 		F498C38B93CB5D78E5E2E1FC6BD22EE7 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4BBF9C194EC5B367E4A6A7BA31C094B /* NSObject+YYAddForKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYAddForKVO.m"; path = "YYCategories/Foundation/NSObject+YYAddForKVO.m"; sourceTree = "<group>"; };
+		F51600E82074955D00656DF6 /* WBGMosicaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBGMosicaViewController.h; sourceTree = "<group>"; };
+		F51600E92074955D00656DF6 /* WBGMosicaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBGMosicaViewController.m; sourceTree = "<group>"; };
 		F55D230A380F3A820348B82474D9C076 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
 		F571368B29397E58E38BC59F91B2460B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F624293C1C4F12DC8176653E123AC143 /* WBGMoreKeyboard+CollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBGMoreKeyboard+CollectionView.h"; path = "ZMJImageEditor/Classes/WBGMoreKeyboard+CollectionView.h"; sourceTree = "<group>"; };
@@ -872,14 +874,14 @@
 				E7CB1934C7B2079B54E4234B9DED4DDE /* WBGChatMacros.h */,
 				42A229085A75DEA776ACED3EB791CD44 /* WBGDrawTool.h */,
 				92BA5729C3E2D2D850C5F10A6E5A514B /* WBGDrawTool.m */,
+				F51600E82074955D00656DF6 /* WBGMosicaViewController.h */,
+				F51600E92074955D00656DF6 /* WBGMosicaViewController.m */,
 				742494B1640EE4E5DAE54F3248A35493 /* WBGImageEditor.h */,
 				8613FA428BF8B7F995A7B2E84ED7AC25 /* WBGImageEditor.m */,
 				9C5CB61C1D878270C23EF182A16A161A /* WBGImageEditorGestureManager.h */,
 				53B7229C117288B523C6C5DB9C8F9115 /* WBGImageEditorGestureManager.m */,
 				A9A2BCBD499071469DBB0883E42602F8 /* WBGImageEditorViewController.h */,
 				251C9D5525714DEFB23FEE34FDA45A91 /* WBGImageEditorViewController.m */,
-				0757CB17206E309000CD8D2C /* WBGMosicaViewController.h */,
-				0757CB18206E309000CD8D2C /* WBGMosicaViewController.m */,
 				4AFE2B93F9E121B6C705BC0F138F1384 /* WBGImageToolBase.h */,
 				C0677B157F6AFA2BF7EDD595FB3D042D /* WBGImageToolBase.m */,
 				01D58AE2EDF19E304F41CB90D07A083F /* WBGKeyboardDelegate.h */,
@@ -1066,6 +1068,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51600EA2074955D00656DF6 /* WBGMosicaViewController.h in Headers */,
 				B758FB09FE2C06C1B8E36A71A9D76D41 /* FBSnapshotTestCase-umbrella.h in Headers */,
 				9673CF780F48C8E4EC2A331717B1F67C /* FBSnapshotTestCase.h in Headers */,
 				BFCE460CC33E8872B7156D4166340178 /* FBSnapshotTestCasePlatform.h in Headers */,
@@ -1087,7 +1090,6 @@
 				CCBCE3E843EEBEF5D3EDCC15F77A8C7E /* TOCroppedImageAttributes.h in Headers */,
 				F3AAF979FB520FB55D8BC22298FB3774 /* TOCropScrollView.h in Headers */,
 				3CBA19161E2E7EEF300E6378F6ED8009 /* TOCropToolbar.h in Headers */,
-				0757CB19206E309000CD8D2C /* WBGMosicaViewController.h in Headers */,
 				4748B051821A81A5734E49FF62425562 /* TOCropView.h in Headers */,
 				4099083B16D8042D29FB3E015351595A /* TOCropViewController-Bridging-Header.h in Headers */,
 				CCCBEDCBD703D31FE7B4C2E317B1A6A2 /* TOCropViewController.h in Headers */,
@@ -1104,6 +1106,7 @@
 				621F5A28FDF1AE8FBCC68D14D31505AC /* WBGImageEditorGestureManager.h in Headers */,
 				AB8CE4E66263B5E14BD032EBD9AA067C /* WBGImageEditorViewController.h in Headers */,
 				59DB75AEF06C8ABB55DF817A732B2A99 /* WBGImageToolBase.h in Headers */,
+				F51600EB2074955D00656DF6 /* WBGMosicaViewController.h in Headers */,
 				F99F266E6438E33DA9ACEE7A3FC2BF39 /* WBGKeyboardDelegate.h in Headers */,
 				3F06A9F63F0512E0DDC87E3A143BCE41 /* WBGKeyboardProtocol.h in Headers */,
 				FA152FFEF2D7F6BEE845AB8FF75CC534 /* WBGMoreKeyboard+CollectionView.h in Headers */,
@@ -1344,6 +1347,7 @@
 				C1F18227E0134BECA902FA724CA5DCE3 /* ColorfullButton.m in Sources */,
 				86BE2A79B177B0DEE300C8222D1CF591 /* TOActivityCroppedImageProvider.m in Sources */,
 				8C49535786C1C4ED144D2CB854129DC0 /* TOCropOverlayView.m in Sources */,
+				F51600ED2074955D00656DF6 /* WBGMosicaViewController.m in Sources */,
 				BE696E03EF0A24976648C02CCFDC9009 /* TOCroppedImageAttributes.m in Sources */,
 				4FBDC7E130265E68F98D665DA6C65502 /* TOCropScrollView.m in Sources */,
 				686294615C627FA1CE16BC743375B22E /* TOCropToolbar.m in Sources */,
@@ -1356,7 +1360,6 @@
 				D89B0808DD8643E7DB505E1DF5EAA3B0 /* TOCropViewControllerLocalizable.strings in Sources */,
 				A1A0FD734430CB79A66B5D5BA3399D53 /* TOCropViewControllerLocalizable.strings in Sources */,
 				89016F2768317A9C061990A8F63C7DAC /* TOCropViewControllerLocalizable.strings in Sources */,
-				0757CB1A206E309000CD8D2C /* WBGMosicaViewController.m in Sources */,
 				4B4CC22CB2B8EEF61842A6D545D6B0A3 /* TOCropViewControllerLocalizable.strings in Sources */,
 				C2227F21ADEA4B2E162E9DF448F38A33 /* TOCropViewControllerLocalizable.strings in Sources */,
 				1A5C0AD98AB623200E4C042D4EBEC12B /* TOCropViewControllerLocalizable.strings in Sources */,
@@ -1407,6 +1410,7 @@
 				F33986F4969B4F178AF9EB568FE8B1AA /* FBSnapshotTestCase-dummy.m in Sources */,
 				D097F3914F8E2EA14FB7C88FA3099F26 /* FBSnapshotTestCase.m in Sources */,
 				7F97C4BCF71877056A7829143E78F33B /* FBSnapshotTestCasePlatform.m in Sources */,
+				F51600EC2074955D00656DF6 /* WBGMosicaViewController.m in Sources */,
 				E9D5EF482949E65F0E84B0810721CFBF /* FBSnapshotTestController.m in Sources */,
 				5F65495211297994220A8D081EAEFE15 /* SwiftSupport.swift in Sources */,
 				61100C0E6FB329EE38659B3E5A1B7090 /* UIApplication+StrictKeyWindow.m in Sources */,
