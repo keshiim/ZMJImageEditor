@@ -750,10 +750,11 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
 
 + (UIImage *)screenshot:(UIView *)view orientation:(UIDeviceOrientation)orientation usePresentationLayer:(BOOL)usePresentationLayer
 {
+    __block CGSize targetSize = CGSizeZero;
     dispatch_async(dispatch_get_main_queue(), ^{
         CGSize size = view.bounds.size;
-        CGSize targetSize = CGSizeMake(size.width * view.layer.transformScaleX, size.height *  view.layer.transformScaleY);
-    }):
+        targetSize = CGSizeMake(size.width * view.layer.transformScaleX, size.height *  view.layer.transformScaleY);
+    });
     
     UIGraphicsBeginImageContextWithOptions(targetSize, NO, [UIScreen mainScreen].scale);
     
@@ -761,7 +762,7 @@ NSString * const kColorPanNotificaiton = @"kColorPanNotificaiton";
     CGContextSaveGState(ctx);
     dispatch_async(dispatch_get_main_queue(), ^{
         [view drawViewHierarchyInRect:CGRectMake(0, 0, targetSize.width, targetSize.height) afterScreenUpdates:NO];
-    }):
+    });
     CGContextRestoreGState(ctx);
     
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
