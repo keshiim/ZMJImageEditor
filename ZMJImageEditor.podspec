@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ZMJImageEditor'
-  s.version          = '0.2.4'
+  s.version          = '0.3.0'
   s.summary          = 'ZMJImageEditor is a component of image editing like WeChat, powerful and easy to integrate, and supports the functions of drawing, text, rotation, cutting, mapping and so on. (是一个和微信一样图片编辑的组件，功能强大，极易集成，支持绘制、文字、旋转、剪裁、贴图等功能)'
   s.homepage         = 'https://github.com/keshiim/ZMJImageEditor'
   # s.screenshots     = 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/draw.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/text2.gif', 'https://github.com/keshiim/Swift_learn_CoreGraphics/blob/master/screenshot/clip.gif'
